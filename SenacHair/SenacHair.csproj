@@ -97,5 +97,37 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\about.ico" />
+    <Content Include="Resources\address_book.ico" />
+    <Content Include="Resources\address_book_add.ico" />
+    <Content Include="Resources\add_16.ico" />
+    <Content Include="Resources\briefcase.ico" />
+    <Content Include="Resources\briefcase_add.ico" />
+    <Content Include="Resources\bullet_ball_glass_green.png" />
+    <Content Include="Resources\bullet_ball_glass_red.png" />
+    <Content Include="Resources\businessman.ico" />
+    <Content Include="Resources\businessman_add.ico" />
+    <Content Include="Resources\businesspeople.ico" />
+    <Content Include="Resources\calendar_1.ico" />
+    <Content Include="Resources\check.ico" />
+    <Content Include="Resources\credit_cards.ico" />
+    <Content Include="Resources\Dentistas.ico" />
+    <Content Include="Resources\door2_open.ico" />
+    <Content Include="Resources\eraser.ico" />
+    <Content Include="Resources\exit.ico" />
+    <Content Include="Resources\facebook.jpg" />
+    <Content Include="Resources\FloppyDisks.ico" />
+    <Content Include="Resources\HappySmile.jpg" />
+    <Content Include="Resources\Lock_1.png" />
+    <Content Include="Resources\Logo Code Black.jpg" />
+    <Content Include="Resources\Minus_16.ico" />
+    <Content Include="Resources\note.ico" />
+    <Content Include="Resources\notebook.ico" />
+    <Content Include="Resources\note_add.ico" />
+    <Content Include="Resources\Pacientes.ico" />
+    <Content Include="Resources\stockbroker2.ico" />
+    <Content Include="Resources\telephone2.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

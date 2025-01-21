@@ -52,11 +52,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="frmEspecialidade.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmEspecialidade.Designer.cs">
       <DependentUpon>frmEspecialidade.cs</DependentUpon>
+=======
+    <Compile Include="frmAgendamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgendamento.Designer.cs">
+      <DependentUpon>frmAgendamento.cs</DependentUpon>
+>>>>>>> 642f1a0a12f7189e8dc71801e9477b30e805cec4
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -69,8 +77,13 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="frmEspecialidade.resx">
       <DependentUpon>frmEspecialidade.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="frmAgendamento.resx">
+      <DependentUpon>frmAgendamento.cs</DependentUpon>
+>>>>>>> 642f1a0a12f7189e8dc71801e9477b30e805cec4
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -96,6 +109,38 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\about.ico" />
+    <Content Include="Resources\address_book.ico" />
+    <Content Include="Resources\address_book_add.ico" />
+    <Content Include="Resources\add_16.ico" />
+    <Content Include="Resources\briefcase.ico" />
+    <Content Include="Resources\briefcase_add.ico" />
+    <Content Include="Resources\bullet_ball_glass_green.png" />
+    <Content Include="Resources\bullet_ball_glass_red.png" />
+    <Content Include="Resources\businessman.ico" />
+    <Content Include="Resources\businessman_add.ico" />
+    <Content Include="Resources\businesspeople.ico" />
+    <Content Include="Resources\calendar_1.ico" />
+    <Content Include="Resources\check.ico" />
+    <Content Include="Resources\credit_cards.ico" />
+    <Content Include="Resources\Dentistas.ico" />
+    <Content Include="Resources\door2_open.ico" />
+    <Content Include="Resources\eraser.ico" />
+    <Content Include="Resources\exit.ico" />
+    <Content Include="Resources\facebook.jpg" />
+    <Content Include="Resources\FloppyDisks.ico" />
+    <Content Include="Resources\HappySmile.jpg" />
+    <Content Include="Resources\Lock_1.png" />
+    <Content Include="Resources\Logo Code Black.jpg" />
+    <Content Include="Resources\Minus_16.ico" />
+    <Content Include="Resources\note.ico" />
+    <Content Include="Resources\notebook.ico" />
+    <Content Include="Resources\note_add.ico" />
+    <Content Include="Resources\Pacientes.ico" />
+    <Content Include="Resources\stockbroker2.ico" />
+    <Content Include="Resources\telephone2.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

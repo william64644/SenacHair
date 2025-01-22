@@ -34,7 +34,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,19 +55,127 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAgendamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgendamento.Designer.cs">
+      <DependentUpon>frmAgendamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCliente.Designer.cs">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDentista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDentista.Designer.cs">
+      <DependentUpon>frmDentista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEspecialidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEspecialidade.Designer.cs">
+      <DependentUpon>frmEspecialidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFormaPagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFormaPagamento.Designer.cs">
+      <DependentUpon>frmFormaPagamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProcedimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProcedimento.Designer.cs">
+      <DependentUpon>frmProcedimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSituacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSituacao.Designer.cs">
+      <DependentUpon>frmSituacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSobre.Designer.cs">
+      <DependentUpon>frmSobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoCliente.Designer.cs">
+      <DependentUpon>frmTipoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoTelefone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoTelefone.Designer.cs">
+      <DependentUpon>frmTipoTelefone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuario.Designer.cs">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAgendamento.resx">
+      <DependentUpon>frmAgendamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCliente.resx">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDentista.resx">
+      <DependentUpon>frmDentista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEspecialidade.resx">
+      <DependentUpon>frmEspecialidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFormaPagamento.resx">
+      <DependentUpon>frmFormaPagamento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProcedimento.resx">
+      <DependentUpon>frmProcedimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSituacao.resx">
+      <DependentUpon>frmSituacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSobre.resx">
+      <DependentUpon>frmSobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoCliente.resx">
+      <DependentUpon>frmTipoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoTelefone.resx">
+      <DependentUpon>frmTipoTelefone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuario.resx">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -74,6 +185,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -87,6 +199,96 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address_book.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address_book_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_ball_glass_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_ball_glass_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businesspeople.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credit_cards.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dentistas.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door2_open.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eraser.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FloppyDisks.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HappySmile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Code Black.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minus_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notebook.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pacientes.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stockbroker2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telephone2.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

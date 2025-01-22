@@ -88,7 +88,8 @@
             // 
             // pctImagem
             // 
-            this.pctImagem.Location = new System.Drawing.Point(12, 12);
+            this.pctImagem.Image = global::SenacHair.Properties.Resources.Lock_1;
+            this.pctImagem.Location = new System.Drawing.Point(12, 10);
             this.pctImagem.Name = "pctImagem";
             this.pctImagem.Size = new System.Drawing.Size(91, 134);
             this.pctImagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -97,6 +98,7 @@
             // 
             // btnOk
             // 
+            this.btnOk.Image = global::SenacHair.Properties.Resources.check;
             this.btnOk.Location = new System.Drawing.Point(214, 102);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(102, 44);
@@ -109,6 +111,7 @@
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancelar.Image = global::SenacHair.Properties.Resources.exit;
             this.btnCancelar.Location = new System.Drawing.Point(109, 102);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(102, 44);

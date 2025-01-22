@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAgendamento));
             this.grpAgendamento = new System.Windows.Forms.GroupBox();
             this.grdAgendamento = new System.Windows.Forms.DataGridView();
             this.dtpAgendamento = new System.Windows.Forms.DateTimePicker();
@@ -84,15 +85,16 @@
             // 
             this.cboDentista.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboDentista.FormattingEnabled = true;
-            this.cboDentista.Location = new System.Drawing.Point(67, 14);
+            this.cboDentista.Location = new System.Drawing.Point(61, 14);
             this.cboDentista.Name = "cboDentista";
-            this.cboDentista.Size = new System.Drawing.Size(230, 21);
+            this.cboDentista.Size = new System.Drawing.Size(236, 21);
             this.cboDentista.TabIndex = 9;
             // 
             // lblDentista
             // 
             this.lblDentista.AutoSize = true;
-            this.lblDentista.Location = new System.Drawing.Point(15, 17);
+            this.lblDentista.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDentista.Location = new System.Drawing.Point(12, 17);
             this.lblDentista.Name = "lblDentista";
             this.lblDentista.Size = new System.Drawing.Size(46, 13);
             this.lblDentista.TabIndex = 8;
@@ -108,6 +110,7 @@
             this.Controls.Add(this.lblData);
             this.Controls.Add(this.cboDentista);
             this.Controls.Add(this.lblDentista);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAgendamento";
             this.Text = "frmAgendamento";
             this.grpAgendamento.ResumeLayout(false);

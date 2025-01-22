@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDentista));
             this.lblPesquisa = new System.Windows.Forms.Label();
             this.btnRem = new System.Windows.Forms.Button();
             this.lstEspecialidades = new System.Windows.Forms.ListBox();
@@ -253,6 +254,7 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.grpDados);
             this.Controls.Add(this.grpLista);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmDentista";
             this.Text = "frmDentista";
             this.grpPesquisa.ResumeLayout(false);

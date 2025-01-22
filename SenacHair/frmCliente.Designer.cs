@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCliente));
             this.lblCarteira = new System.Windows.Forms.Label();
             this.txtCarteira = new System.Windows.Forms.TextBox();
             this.txtConvenio = new System.Windows.Forms.TextBox();
@@ -296,6 +297,7 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.grpDados);
             this.Controls.Add(this.grpLista);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCliente";
             this.Text = "frmCliente";
             this.grpConvenio.ResumeLayout(false);

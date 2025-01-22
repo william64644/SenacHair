@@ -98,6 +98,7 @@
             this.Controls.Add(this.pctLogo);
             this.Controls.Add(this.pctCliente);
             this.Controls.Add(this.btnCancelar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmSobre";
             this.Text = "frmSobre";
             ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).EndInit();

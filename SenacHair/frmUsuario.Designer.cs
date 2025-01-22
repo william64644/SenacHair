@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUsuario));
             this.grpStatus = new System.Windows.Forms.GroupBox();
             this.rdbInativo = new System.Windows.Forms.RadioButton();
             this.rdbAtivo = new System.Windows.Forms.RadioButton();
@@ -279,6 +280,7 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.grpLista);
             this.Controls.Add(this.grpDados);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmUsuario";
             this.Text = "frmUsuario";
             this.grpStatus.ResumeLayout(false);

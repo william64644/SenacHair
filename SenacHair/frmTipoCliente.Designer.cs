@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTipoCliente));
             this.grpLista = new System.Windows.Forms.GroupBox();
             this.grdDados = new System.Windows.Forms.DataGridView();
             this.grpPesquisa = new System.Windows.Forms.GroupBox();
@@ -175,6 +176,7 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.grpPesquisa);
             this.Controls.Add(this.grpDados);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmTipoCliente";
             this.Text = "frmTipoCliente";
             this.grpLista.ResumeLayout(false);

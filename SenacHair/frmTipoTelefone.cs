@@ -16,5 +16,10 @@ namespace SenacHair
         {
             InitializeComponent();
         }
+
+        private void frmTipoTelefone_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

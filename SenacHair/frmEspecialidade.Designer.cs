@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEspecialidade));
             this.grpLista = new System.Windows.Forms.GroupBox();
             this.grdDados = new System.Windows.Forms.DataGridView();
@@ -190,20 +191,25 @@
             this.grpPesquisa.PerformLayout();
             this.ResumeLayout(false);
 
+
         }
 
         #endregion
 
         private System.Windows.Forms.GroupBox grpLista;
         private System.Windows.Forms.DataGridView grdDados;
+
         private System.Windows.Forms.Label lblEspecialidade;
         private System.Windows.Forms.TextBox txtEspecialidade;
         private System.Windows.Forms.TextBox txtPesquisa;
         private System.Windows.Forms.Label lblPesquisa;
+
         private System.Windows.Forms.Button btnGravar;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.GroupBox grpDados;
         private System.Windows.Forms.Button btnCancelar;
+
         private System.Windows.Forms.GroupBox grpPesquisa;
+
     }
 }

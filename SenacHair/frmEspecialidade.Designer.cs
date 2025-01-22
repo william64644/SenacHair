@@ -168,15 +168,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(385, 407);
+            this.ClientSize = new System.Drawing.Size(380, 402);
             this.Controls.Add(this.grpLista);
             this.Controls.Add(this.btnGravar);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.grpDados);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.grpPesquisa);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmEspecialidade";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmEspecialidade";
             this.grpLista.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdDados)).EndInit();

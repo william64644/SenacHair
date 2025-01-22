@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCabeleireiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCabeleireiro.Designer.cs">
+      <DependentUpon>frmCabeleireiro.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCabeleireiro.resx">
+      <DependentUpon>frmCabeleireiro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -74,6 +83,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -87,6 +97,96 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address_book.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address_book_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_ball_glass_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_ball_glass_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businesspeople.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credit_cards.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dentistas.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door2_open.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eraser.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FloppyDisks.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HappySmile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Code Black.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minus_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notebook.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pacientes.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stockbroker2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telephone2.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -54,7 +54,7 @@
             this.grpLista.Size = new System.Drawing.Size(360, 215);
             this.grpLista.TabIndex = 25;
             this.grpLista.TabStop = false;
-            this.grpLista.Text = "Especialidades Cadastradas";
+            this.grpLista.Text = "Procedimentos  Cadastrados";
             // 
             // grdDados
             // 
@@ -78,9 +78,9 @@
             this.lblEspecialidade.AutoSize = true;
             this.lblEspecialidade.Location = new System.Drawing.Point(6, 26);
             this.lblEspecialidade.Name = "lblEspecialidade";
-            this.lblEspecialidade.Size = new System.Drawing.Size(73, 13);
+            this.lblEspecialidade.Size = new System.Drawing.Size(77, 13);
             this.lblEspecialidade.TabIndex = 19;
-            this.lblEspecialidade.Text = "Especialidade";
+            this.lblEspecialidade.Text = "Procedimentos";
             // 
             // txtEspecialidade
             // 

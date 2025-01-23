@@ -29,13 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCliente));
-            this.lblCarteira = new System.Windows.Forms.Label();
-            this.txtCarteira = new System.Windows.Forms.TextBox();
-            this.txtConvenio = new System.Windows.Forms.TextBox();
             this.lblCelular = new System.Windows.Forms.Label();
             this.txtCelular = new System.Windows.Forms.TextBox();
-            this.grpConvenio = new System.Windows.Forms.GroupBox();
-            this.lblConvenio = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.grdDados = new System.Windows.Forms.DataGridView();
             this.btnLimpar = new System.Windows.Forms.Button();
@@ -51,37 +46,11 @@
             this.txtCPF = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.grpLista = new System.Windows.Forms.GroupBox();
-            this.grpConvenio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdDados)).BeginInit();
             this.grpPesquisa.SuspendLayout();
             this.grpDados.SuspendLayout();
             this.grpLista.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lblCarteira
-            // 
-            this.lblCarteira.AutoSize = true;
-            this.lblCarteira.Location = new System.Drawing.Point(22, 48);
-            this.lblCarteira.Name = "lblCarteira";
-            this.lblCarteira.Size = new System.Drawing.Size(72, 13);
-            this.lblCarteira.TabIndex = 26;
-            this.lblCarteira.Text = "Nº Carteirinha";
-            // 
-            // txtCarteira
-            // 
-            this.txtCarteira.Location = new System.Drawing.Point(99, 46);
-            this.txtCarteira.MaxLength = 100;
-            this.txtCarteira.Name = "txtCarteira";
-            this.txtCarteira.Size = new System.Drawing.Size(216, 20);
-            this.txtCarteira.TabIndex = 1;
-            // 
-            // txtConvenio
-            // 
-            this.txtConvenio.Location = new System.Drawing.Point(99, 20);
-            this.txtConvenio.MaxLength = 100;
-            this.txtConvenio.Name = "txtConvenio";
-            this.txtConvenio.Size = new System.Drawing.Size(216, 20);
-            this.txtConvenio.TabIndex = 0;
             // 
             // lblCelular
             // 
@@ -99,31 +68,6 @@
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Size = new System.Drawing.Size(134, 20);
             this.txtCelular.TabIndex = 2;
-            // 
-            // grpConvenio
-            // 
-            this.grpConvenio.Controls.Add(this.lblCarteira);
-            this.grpConvenio.Controls.Add(this.txtCarteira);
-            this.grpConvenio.Controls.Add(this.lblConvenio);
-            this.grpConvenio.Controls.Add(this.txtConvenio);
-            this.grpConvenio.Enabled = false;
-            this.grpConvenio.Location = new System.Drawing.Point(13, 96);
-            this.grpConvenio.Margin = new System.Windows.Forms.Padding(2);
-            this.grpConvenio.Name = "grpConvenio";
-            this.grpConvenio.Padding = new System.Windows.Forms.Padding(2);
-            this.grpConvenio.Size = new System.Drawing.Size(335, 77);
-            this.grpConvenio.TabIndex = 4;
-            this.grpConvenio.TabStop = false;
-            this.grpConvenio.Text = "Dados do Convênio";
-            // 
-            // lblConvenio
-            // 
-            this.lblConvenio.AutoSize = true;
-            this.lblConvenio.Location = new System.Drawing.Point(22, 22);
-            this.lblConvenio.Name = "lblConvenio";
-            this.lblConvenio.Size = new System.Drawing.Size(52, 13);
-            this.lblConvenio.TabIndex = 24;
-            this.lblConvenio.Text = "Convênio";
             // 
             // txtNome
             // 
@@ -154,7 +98,7 @@
             // btnLimpar
             // 
             this.btnLimpar.Image = global::SenacHair.Properties.Resources.eraser;
-            this.btnLimpar.Location = new System.Drawing.Point(134, 484);
+            this.btnLimpar.Location = new System.Drawing.Point(133, 411);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(115, 41);
             this.btnLimpar.TabIndex = 28;
@@ -180,6 +124,7 @@
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(265, 20);
             this.txtPesquisa.TabIndex = 0;
+            this.txtPesquisa.Text = "ua";
             // 
             // lblPesquisa
             // 
@@ -193,7 +138,7 @@
             // btnGravar
             // 
             this.btnGravar.Image = global::SenacHair.Properties.Resources.FloppyDisks;
-            this.btnGravar.Location = new System.Drawing.Point(13, 484);
+            this.btnGravar.Location = new System.Drawing.Point(12, 411);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(115, 41);
             this.btnGravar.TabIndex = 27;
@@ -205,7 +150,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Image = global::SenacHair.Properties.Resources.exit;
-            this.btnCancelar.Location = new System.Drawing.Point(257, 484);
+            this.btnCancelar.Location = new System.Drawing.Point(256, 411);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(115, 41);
             this.btnCancelar.TabIndex = 29;
@@ -218,7 +163,6 @@
             // 
             this.grpDados.Controls.Add(this.lblCelular);
             this.grpDados.Controls.Add(this.txtCelular);
-            this.grpDados.Controls.Add(this.grpConvenio);
             this.grpDados.Controls.Add(this.cboTipoCliente);
             this.grpDados.Controls.Add(this.lblTipoCliente);
             this.grpDados.Controls.Add(this.lblCPF);
@@ -227,7 +171,7 @@
             this.grpDados.Controls.Add(this.txtNome);
             this.grpDados.Location = new System.Drawing.Point(12, 292);
             this.grpDados.Name = "grpDados";
-            this.grpDados.Size = new System.Drawing.Size(360, 185);
+            this.grpDados.Size = new System.Drawing.Size(360, 113);
             this.grpDados.TabIndex = 26;
             this.grpDados.TabStop = false;
             this.grpDados.Text = "Dados para Cadastro";
@@ -290,7 +234,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(383, 537);
+            this.ClientSize = new System.Drawing.Size(383, 461);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.grpPesquisa);
             this.Controls.Add(this.btnGravar);
@@ -300,8 +244,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCliente";
             this.Text = "frmCliente";
-            this.grpConvenio.ResumeLayout(false);
-            this.grpConvenio.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdDados)).EndInit();
             this.grpPesquisa.ResumeLayout(false);
             this.grpPesquisa.PerformLayout();
@@ -313,14 +255,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblCarteira;
-        private System.Windows.Forms.TextBox txtCarteira;
-        private System.Windows.Forms.TextBox txtConvenio;
         private System.Windows.Forms.Label lblCelular;
         private System.Windows.Forms.TextBox txtCelular;
-        private System.Windows.Forms.GroupBox grpConvenio;
-        private System.Windows.Forms.Label lblConvenio;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.DataGridView grdDados;
         private System.Windows.Forms.Button btnLimpar;

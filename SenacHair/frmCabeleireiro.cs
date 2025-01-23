@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SenacHair
 {
-    public partial class frmDentista : Form
+    public partial class frmCabeleireiro : Form
     {
-        public frmDentista()
+        public frmCabeleireiro()
         {
             InitializeComponent();
         }

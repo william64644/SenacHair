@@ -124,7 +124,7 @@
             this.grpDados.Controls.Add(this.txtProcedimento);
             this.grpDados.Location = new System.Drawing.Point(12, 292);
             this.grpDados.Name = "grpDados";
-            this.grpDados.Size = new System.Drawing.Size(360, 56);
+            this.grpDados.Size = new System.Drawing.Size(360, 102);
             this.grpDados.TabIndex = 38;
             this.grpDados.TabStop = false;
             this.grpDados.Text = "Dados para Cadastro";
@@ -132,7 +132,7 @@
             // btnLimpar
             // 
             this.btnLimpar.Image = global::SenacHair.Properties.Resources.eraser;
-            this.btnLimpar.Location = new System.Drawing.Point(135, 360);
+            this.btnLimpar.Location = new System.Drawing.Point(132, 400);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(115, 41);
             this.btnLimpar.TabIndex = 31;
@@ -144,7 +144,7 @@
             // btnGravar
             // 
             this.btnGravar.Image = global::SenacHair.Properties.Resources.FloppyDisks;
-            this.btnGravar.Location = new System.Drawing.Point(14, 360);
+            this.btnGravar.Location = new System.Drawing.Point(11, 400);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(115, 41);
             this.btnGravar.TabIndex = 30;
@@ -156,7 +156,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Image = global::SenacHair.Properties.Resources.exit;
-            this.btnCancelar.Location = new System.Drawing.Point(258, 360);
+            this.btnCancelar.Location = new System.Drawing.Point(255, 400);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(115, 41);
             this.btnCancelar.TabIndex = 32;
@@ -169,7 +169,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(387, 413);
+            this.ClientSize = new System.Drawing.Size(387, 453);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnGravar);
             this.Controls.Add(this.grpLista);

@@ -1,6 +1,6 @@
 ﻿namespace SenacHair
 {
-    partial class frmDentista
+    partial class frmCabeleireiro
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDentista));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCabeleireiro));
             this.lblPesquisa = new System.Windows.Forms.Label();
             this.btnRem = new System.Windows.Forms.Button();
-            this.lstEspecialidades = new System.Windows.Forms.ListBox();
+            this.lstProcedimentos = new System.Windows.Forms.ListBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.cboEspecialidades = new System.Windows.Forms.ComboBox();
             this.lblEspecialidades = new System.Windows.Forms.Label();
@@ -73,13 +73,13 @@
             this.btnRem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnRem.UseVisualStyleBackColor = true;
             // 
-            // lstEspecialidades
+            // lstProcedimentos
             // 
-            this.lstEspecialidades.FormattingEnabled = true;
-            this.lstEspecialidades.Location = new System.Drawing.Point(94, 100);
-            this.lstEspecialidades.Name = "lstEspecialidades";
-            this.lstEspecialidades.Size = new System.Drawing.Size(223, 108);
-            this.lstEspecialidades.TabIndex = 24;
+            this.lstProcedimentos.FormattingEnabled = true;
+            this.lstProcedimentos.Location = new System.Drawing.Point(94, 100);
+            this.lstProcedimentos.Name = "lstProcedimentos";
+            this.lstProcedimentos.Size = new System.Drawing.Size(223, 108);
+            this.lstProcedimentos.TabIndex = 24;
             // 
             // btnAdd
             // 
@@ -106,9 +106,9 @@
             this.lblEspecialidades.AutoSize = true;
             this.lblEspecialidades.Location = new System.Drawing.Point(10, 76);
             this.lblEspecialidades.Name = "lblEspecialidades";
-            this.lblEspecialidades.Size = new System.Drawing.Size(78, 13);
+            this.lblEspecialidades.Size = new System.Drawing.Size(77, 13);
             this.lblEspecialidades.TabIndex = 21;
-            this.lblEspecialidades.Text = "Especialidades";
+            this.lblEspecialidades.Text = "Procedimentos";
             // 
             // label1
             // 
@@ -182,7 +182,7 @@
             // grpDados
             // 
             this.grpDados.Controls.Add(this.btnRem);
-            this.grpDados.Controls.Add(this.lstEspecialidades);
+            this.grpDados.Controls.Add(this.lstProcedimentos);
             this.grpDados.Controls.Add(this.btnAdd);
             this.grpDados.Controls.Add(this.cboEspecialidades);
             this.grpDados.Controls.Add(this.lblEspecialidades);
@@ -205,7 +205,7 @@
             this.grpLista.Size = new System.Drawing.Size(360, 215);
             this.grpLista.TabIndex = 19;
             this.grpLista.TabStop = false;
-            this.grpLista.Text = "Dentistas Cadastrados";
+            this.grpLista.Text = "Cabeleireiros Cadastrados";
             // 
             // btnLimpar
             // 
@@ -243,7 +243,7 @@
             this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
-            // frmDentista
+            // frmCabeleireiro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -255,8 +255,8 @@
             this.Controls.Add(this.grpDados);
             this.Controls.Add(this.grpLista);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmDentista";
-            this.Text = "frmDentista";
+            this.Name = "frmCabeleireiro";
+            this.Text = "frmCabeleireiro";
             this.grpPesquisa.ResumeLayout(false);
             this.grpPesquisa.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdDados)).EndInit();
@@ -270,7 +270,7 @@
         #endregion
         private System.Windows.Forms.Label lblPesquisa;
         private System.Windows.Forms.Button btnRem;
-        private System.Windows.Forms.ListBox lstEspecialidades;
+        private System.Windows.Forms.ListBox lstProcedimentos;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.ComboBox cboEspecialidades;
         private System.Windows.Forms.Label lblEspecialidades;

@@ -67,7 +67,7 @@
             // dtpAgendamento
             // 
             this.dtpAgendamento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpAgendamento.Location = new System.Drawing.Point(343, 14);
+            this.dtpAgendamento.Location = new System.Drawing.Point(369, 13);
             this.dtpAgendamento.Name = "dtpAgendamento";
             this.dtpAgendamento.Size = new System.Drawing.Size(96, 20);
             this.dtpAgendamento.TabIndex = 6;
@@ -75,7 +75,7 @@
             // lblData
             // 
             this.lblData.AutoSize = true;
-            this.lblData.Location = new System.Drawing.Point(306, 17);
+            this.lblData.Location = new System.Drawing.Point(333, 12);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(30, 13);
             this.lblData.TabIndex = 5;
@@ -85,7 +85,7 @@
             // 
             this.cboDentista.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboDentista.FormattingEnabled = true;
-            this.cboDentista.Location = new System.Drawing.Point(61, 14);
+            this.cboDentista.Location = new System.Drawing.Point(80, 12);
             this.cboDentista.Name = "cboDentista";
             this.cboDentista.Size = new System.Drawing.Size(236, 21);
             this.cboDentista.TabIndex = 9;
@@ -94,11 +94,11 @@
             // 
             this.lblDentista.AutoSize = true;
             this.lblDentista.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblDentista.Location = new System.Drawing.Point(12, 17);
+            this.lblDentista.Location = new System.Drawing.Point(15, 14);
             this.lblDentista.Name = "lblDentista";
-            this.lblDentista.Size = new System.Drawing.Size(46, 13);
+            this.lblDentista.Size = new System.Drawing.Size(62, 13);
             this.lblDentista.TabIndex = 8;
-            this.lblDentista.Text = "Dentista";
+            this.lblDentista.Text = "Cabeleireiro";
             // 
             // frmAgendamento
             // 

@@ -16,7 +16,18 @@ namespace SenacHair
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmAgendamento());
+
+            //Instanciamos um objeto do formulario de login para autenticarmos o usuário
+            frmLogin frm = new frmLogin();
+            //Exibimos o formulário em modo proprietário
+            frm.ShowDialog();
+
+            if (frm.DialogResult == DialogResult.OK)
+            {
+                //Caso o formulário tenha retornado Ok como DialogResult, prosseguimos
+                //com a execução da aplicação
+                Application.Run(new frmPrincipal());
+            }
         }
     }
 }

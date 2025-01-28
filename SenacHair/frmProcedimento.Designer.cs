@@ -34,9 +34,9 @@
             this.grpPesquisa = new System.Windows.Forms.GroupBox();
             this.txtPesquisa = new System.Windows.Forms.TextBox();
             this.lblPesquisa = new System.Windows.Forms.Label();
+            this.grpDados = new System.Windows.Forms.GroupBox();
             this.lblProcedimento = new System.Windows.Forms.Label();
             this.txtProcedimento = new System.Windows.Forms.TextBox();
-            this.grpDados = new System.Windows.Forms.GroupBox();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnGravar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -101,38 +101,38 @@
             this.lblPesquisa.TabIndex = 0;
             this.lblPesquisa.Text = "Pesquisar por";
             // 
-            // lblProcedimento
-            // 
-            this.lblProcedimento.AutoSize = true;
-            this.lblProcedimento.Location = new System.Drawing.Point(6, 26);
-            this.lblProcedimento.Name = "lblProcedimento";
-            this.lblProcedimento.Size = new System.Drawing.Size(83, 13);
-            this.lblProcedimento.TabIndex = 19;
-            this.lblProcedimento.Text = "Tipos de Cliente";
-            // 
-            // txtProcedimento
-            // 
-            this.txtProcedimento.Location = new System.Drawing.Point(93, 24);
-            this.txtProcedimento.MaxLength = 100;
-            this.txtProcedimento.Name = "txtProcedimento";
-            this.txtProcedimento.Size = new System.Drawing.Size(255, 20);
-            this.txtProcedimento.TabIndex = 0;
-            // 
             // grpDados
             // 
             this.grpDados.Controls.Add(this.lblProcedimento);
             this.grpDados.Controls.Add(this.txtProcedimento);
             this.grpDados.Location = new System.Drawing.Point(12, 292);
             this.grpDados.Name = "grpDados";
-            this.grpDados.Size = new System.Drawing.Size(360, 102);
+            this.grpDados.Size = new System.Drawing.Size(360, 73);
             this.grpDados.TabIndex = 38;
             this.grpDados.TabStop = false;
             this.grpDados.Text = "Dados para Cadastro";
             // 
+            // lblProcedimento
+            // 
+            this.lblProcedimento.AutoSize = true;
+            this.lblProcedimento.Location = new System.Drawing.Point(6, 26);
+            this.lblProcedimento.Name = "lblProcedimento";
+            this.lblProcedimento.Size = new System.Drawing.Size(116, 13);
+            this.lblProcedimento.TabIndex = 19;
+            this.lblProcedimento.Text = "Tipos de Procedimento";
+            // 
+            // txtProcedimento
+            // 
+            this.txtProcedimento.Location = new System.Drawing.Point(122, 22);
+            this.txtProcedimento.MaxLength = 100;
+            this.txtProcedimento.Name = "txtProcedimento";
+            this.txtProcedimento.Size = new System.Drawing.Size(228, 20);
+            this.txtProcedimento.TabIndex = 0;
+            // 
             // btnLimpar
             // 
             this.btnLimpar.Image = global::SenacHair.Properties.Resources.eraser;
-            this.btnLimpar.Location = new System.Drawing.Point(132, 400);
+            this.btnLimpar.Location = new System.Drawing.Point(132, 372);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(115, 41);
             this.btnLimpar.TabIndex = 31;
@@ -144,7 +144,7 @@
             // btnGravar
             // 
             this.btnGravar.Image = global::SenacHair.Properties.Resources.FloppyDisks;
-            this.btnGravar.Location = new System.Drawing.Point(11, 400);
+            this.btnGravar.Location = new System.Drawing.Point(11, 372);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(115, 41);
             this.btnGravar.TabIndex = 30;
@@ -156,7 +156,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Image = global::SenacHair.Properties.Resources.exit;
-            this.btnCancelar.Location = new System.Drawing.Point(255, 400);
+            this.btnCancelar.Location = new System.Drawing.Point(255, 372);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(115, 41);
             this.btnCancelar.TabIndex = 32;
@@ -169,7 +169,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(387, 453);
+            this.ClientSize = new System.Drawing.Size(387, 425);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnGravar);
             this.Controls.Add(this.grpLista);
@@ -196,11 +196,11 @@
         private System.Windows.Forms.GroupBox grpPesquisa;
         private System.Windows.Forms.TextBox txtPesquisa;
         private System.Windows.Forms.Label lblPesquisa;
-        private System.Windows.Forms.Label lblProcedimento;
-        private System.Windows.Forms.TextBox txtProcedimento;
         private System.Windows.Forms.GroupBox grpDados;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnGravar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Label lblProcedimento;
+        private System.Windows.Forms.TextBox txtProcedimento;
     }
 }

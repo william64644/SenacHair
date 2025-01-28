@@ -31,10 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSobre));
             this.lblTexto = new System.Windows.Forms.Label();
             this.lblSistema = new System.Windows.Forms.Label();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.pctLogo = new System.Windows.Forms.PictureBox();
             this.pctCliente = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).BeginInit();
+            this.btnCancelar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pctCliente)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,12 +47,22 @@
             // lblSistema
             // 
             this.lblSistema.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSistema.Location = new System.Drawing.Point(12, 83);
+            this.lblSistema.Location = new System.Drawing.Point(204, 50);
             this.lblSistema.Name = "lblSistema";
             this.lblSistema.Size = new System.Drawing.Size(157, 93);
             this.lblSistema.TabIndex = 37;
-            this.lblSistema.Text = "Happy Smile \r\nSistema Gerenciamento de Consultórios\r\nVersão 3.6.45\r\n(c)2024 Code " +
-    "Technology\r\nTodos os direitos reservados.";
+            this.lblSistema.Text = "Senac Hair \r\nSistema Gerenciamento de Consultórios\r\nVersão 3.6.45\r\n(c)2025 Code T" +
+    "echnology\r\nTodos os direitos reservados.";
+            // 
+            // pctCliente
+            // 
+            this.pctCliente.Image = global::SenacHair.Properties.Resources.Senac_Hair_Sobre;
+            this.pctCliente.Location = new System.Drawing.Point(18, 12);
+            this.pctCliente.Name = "pctCliente";
+            this.pctCliente.Size = new System.Drawing.Size(180, 164);
+            this.pctCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pctCliente.TabIndex = 35;
+            this.pctCliente.TabStop = false;
             // 
             // btnCancelar
             // 
@@ -67,26 +75,7 @@
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // pctLogo
-            // 
-            this.pctLogo.Image = global::SenacHair.Properties.Resources.Logo_Code_Black;
-            this.pctLogo.Location = new System.Drawing.Point(12, 12);
-            this.pctLogo.Name = "pctLogo";
-            this.pctLogo.Size = new System.Drawing.Size(157, 68);
-            this.pctLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pctLogo.TabIndex = 36;
-            this.pctLogo.TabStop = false;
-            // 
-            // pctCliente
-            // 
-            this.pctCliente.Image = global::SenacHair.Properties.Resources.facebook;
-            this.pctCliente.Location = new System.Drawing.Point(175, 12);
-            this.pctCliente.Name = "pctCliente";
-            this.pctCliente.Size = new System.Drawing.Size(180, 164);
-            this.pctCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pctCliente.TabIndex = 35;
-            this.pctCliente.TabStop = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // frmSobre
             // 
@@ -95,13 +84,11 @@
             this.ClientSize = new System.Drawing.Size(372, 283);
             this.Controls.Add(this.lblTexto);
             this.Controls.Add(this.lblSistema);
-            this.Controls.Add(this.pctLogo);
             this.Controls.Add(this.pctCliente);
             this.Controls.Add(this.btnCancelar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmSobre";
             this.Text = "frmSobre";
-            ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -112,7 +99,6 @@
 
         private System.Windows.Forms.Label lblTexto;
         private System.Windows.Forms.Label lblSistema;
-        private System.Windows.Forms.PictureBox pctLogo;
         private System.Windows.Forms.PictureBox pctCliente;
         private System.Windows.Forms.Button btnCancelar;
     }

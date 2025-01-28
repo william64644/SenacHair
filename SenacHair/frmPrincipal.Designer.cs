@@ -31,16 +31,16 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.mnuSair = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuTiposTelefone = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuTipos = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuSituacoes = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuProcedimentos = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuFormasPagamento = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuDominios = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuEspecialidade = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuProcedimentos = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuSituacaoAgendamento = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuTiposTelefone = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuAgendamentos = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuCadastroDentista = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuDentistas = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuCadastroPaciente = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuCadastroCabeleireiro = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuCabeleireiros = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuCadastroClientes = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPacientes = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuCadastroUsuario = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuUsuarios = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,34 +61,7 @@
             this.mnuSair.Name = "mnuSair";
             this.mnuSair.Size = new System.Drawing.Size(62, 28);
             this.mnuSair.Text = "Sai&r";
-            // 
-            // mnuTiposTelefone
-            // 
-            this.mnuTiposTelefone.Image = global::SenacHair.Properties.Resources.telephone2;
-            this.mnuTiposTelefone.Name = "mnuTiposTelefone";
-            this.mnuTiposTelefone.Size = new System.Drawing.Size(227, 30);
-            this.mnuTiposTelefone.Text = "Tipos de &Telefones";
-            // 
-            // mnuTipos
-            // 
-            this.mnuTipos.Image = global::SenacHair.Properties.Resources.note;
-            this.mnuTipos.Name = "mnuTipos";
-            this.mnuTipos.Size = new System.Drawing.Size(227, 30);
-            this.mnuTipos.Text = "Tipos de &Cliente";
-            // 
-            // mnuSituacoes
-            // 
-            this.mnuSituacoes.Image = global::SenacHair.Properties.Resources.calendar_1;
-            this.mnuSituacoes.Name = "mnuSituacoes";
-            this.mnuSituacoes.Size = new System.Drawing.Size(227, 30);
-            this.mnuSituacoes.Text = "&Situações de Agendamento";
-            // 
-            // mnuProcedimentos
-            // 
-            this.mnuProcedimentos.Image = global::SenacHair.Properties.Resources.notebook;
-            this.mnuProcedimentos.Name = "mnuProcedimentos";
-            this.mnuProcedimentos.Size = new System.Drawing.Size(227, 30);
-            this.mnuProcedimentos.Text = "&Procedimentos";
+            this.mnuSair.Click += new System.EventHandler(this.mnuSair_Click);
             // 
             // mnuFormasPagamento
             // 
@@ -96,19 +69,52 @@
             this.mnuFormasPagamento.Name = "mnuFormasPagamento";
             this.mnuFormasPagamento.Size = new System.Drawing.Size(227, 30);
             this.mnuFormasPagamento.Text = "&Formas de Pagamento";
+            this.mnuFormasPagamento.Click += new System.EventHandler(this.mnuFormasPagamento_Click);
             // 
             // mnuDominios
             // 
             this.mnuDominios.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuFormasPagamento,
+            this.mnuEspecialidade,
             this.mnuProcedimentos,
-            this.mnuSituacoes,
-            this.mnuTipos,
+            this.mnuSituacaoAgendamento,
             this.mnuTiposTelefone});
             this.mnuDominios.Image = global::SenacHair.Properties.Resources.address_book;
             this.mnuDominios.Name = "mnuDominios";
             this.mnuDominios.Size = new System.Drawing.Size(94, 28);
             this.mnuDominios.Text = "Do&mínios";
+            // 
+            // mnuEspecialidade
+            // 
+            this.mnuEspecialidade.Image = global::SenacHair.Properties.Resources.briefcase;
+            this.mnuEspecialidade.Name = "mnuEspecialidade";
+            this.mnuEspecialidade.Size = new System.Drawing.Size(227, 30);
+            this.mnuEspecialidade.Text = "&Especialidades";
+            this.mnuEspecialidade.Click += new System.EventHandler(this.mnuEspecialidade_Click);
+            // 
+            // mnuProcedimentos
+            // 
+            this.mnuProcedimentos.Image = global::SenacHair.Properties.Resources.notebook;
+            this.mnuProcedimentos.Name = "mnuProcedimentos";
+            this.mnuProcedimentos.Size = new System.Drawing.Size(227, 30);
+            this.mnuProcedimentos.Text = "&Procedimentos";
+            this.mnuProcedimentos.Click += new System.EventHandler(this.mnuProcedimentos_Click);
+            // 
+            // mnuSituacaoAgendamento
+            // 
+            this.mnuSituacaoAgendamento.Image = global::SenacHair.Properties.Resources.calendar_1;
+            this.mnuSituacaoAgendamento.Name = "mnuSituacaoAgendamento";
+            this.mnuSituacaoAgendamento.Size = new System.Drawing.Size(227, 30);
+            this.mnuSituacaoAgendamento.Text = "&Situações de Agendamento";
+            this.mnuSituacaoAgendamento.Click += new System.EventHandler(this.mnuSituacaoAgendamento_Click);
+            // 
+            // mnuTiposTelefone
+            // 
+            this.mnuTiposTelefone.Image = global::SenacHair.Properties.Resources.telephone2;
+            this.mnuTiposTelefone.Name = "mnuTiposTelefone";
+            this.mnuTiposTelefone.Size = new System.Drawing.Size(227, 30);
+            this.mnuTiposTelefone.Text = "Tipos de &Telefones";
+            this.mnuTiposTelefone.Click += new System.EventHandler(this.mnuTiposTelefone_Click);
             // 
             // mnuAgendamentos
             // 
@@ -116,34 +122,37 @@
             this.mnuAgendamentos.Name = "mnuAgendamentos";
             this.mnuAgendamentos.Size = new System.Drawing.Size(124, 28);
             this.mnuAgendamentos.Text = "&Agendamentos";
+            this.mnuAgendamentos.Click += new System.EventHandler(this.mnuAgendamentos_Click);
             // 
-            // mnuCadastroDentista
+            // mnuCadastroCabeleireiro
             // 
-            this.mnuCadastroDentista.Image = global::SenacHair.Properties.Resources.Dentistas;
-            this.mnuCadastroDentista.Name = "mnuCadastroDentista";
-            this.mnuCadastroDentista.Size = new System.Drawing.Size(216, 30);
-            this.mnuCadastroDentista.Text = "Cadastro de Cabeleireiros";
+            this.mnuCadastroCabeleireiro.Image = global::SenacHair.Properties.Resources.Dentistas;
+            this.mnuCadastroCabeleireiro.Name = "mnuCadastroCabeleireiro";
+            this.mnuCadastroCabeleireiro.Size = new System.Drawing.Size(208, 22);
+            this.mnuCadastroCabeleireiro.Text = "Cadastro de Cabeleireiros";
+            this.mnuCadastroCabeleireiro.Click += new System.EventHandler(this.mnuCadastroCabeleireiro_Click);
             // 
-            // mnuDentistas
+            // mnuCabeleireiros
             // 
-            this.mnuDentistas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuCadastroDentista});
-            this.mnuDentistas.Image = global::SenacHair.Properties.Resources.stockbroker2;
-            this.mnuDentistas.Name = "mnuDentistas";
-            this.mnuDentistas.Size = new System.Drawing.Size(111, 28);
-            this.mnuDentistas.Text = "Cabeleireiros";
+            this.mnuCabeleireiros.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuCadastroCabeleireiro});
+            this.mnuCabeleireiros.Image = global::SenacHair.Properties.Resources.stockbroker2;
+            this.mnuCabeleireiros.Name = "mnuCabeleireiros";
+            this.mnuCabeleireiros.Size = new System.Drawing.Size(111, 28);
+            this.mnuCabeleireiros.Text = "Cabeleireiros";
             // 
-            // mnuCadastroPaciente
+            // mnuCadastroClientes
             // 
-            this.mnuCadastroPaciente.Image = global::SenacHair.Properties.Resources.Pacientes;
-            this.mnuCadastroPaciente.Name = "mnuCadastroPaciente";
-            this.mnuCadastroPaciente.Size = new System.Drawing.Size(190, 30);
-            this.mnuCadastroPaciente.Text = "Cadastro de Clientes";
+            this.mnuCadastroClientes.Image = global::SenacHair.Properties.Resources.Pacientes;
+            this.mnuCadastroClientes.Name = "mnuCadastroClientes";
+            this.mnuCadastroClientes.Size = new System.Drawing.Size(182, 22);
+            this.mnuCadastroClientes.Text = "Cadastro de Clientes";
+            this.mnuCadastroClientes.Click += new System.EventHandler(this.mnuCadastroClientes_Click);
             // 
             // mnuPacientes
             // 
             this.mnuPacientes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuCadastroPaciente});
+            this.mnuCadastroClientes});
             this.mnuPacientes.Image = global::SenacHair.Properties.Resources.businesspeople;
             this.mnuPacientes.Name = "mnuPacientes";
             this.mnuPacientes.Size = new System.Drawing.Size(85, 28);
@@ -155,6 +164,7 @@
             this.mnuCadastroUsuario.Name = "mnuCadastroUsuario";
             this.mnuCadastroUsuario.Size = new System.Drawing.Size(188, 30);
             this.mnuCadastroUsuario.Text = "&Cadastro Usuário";
+            this.mnuCadastroUsuario.Click += new System.EventHandler(this.mnuCadastroUsuario_Click);
             // 
             // mnuUsuarios
             // 
@@ -171,7 +181,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuUsuarios,
             this.mnuPacientes,
-            this.mnuDentistas,
+            this.mnuCabeleireiros,
             this.mnuAgendamentos,
             this.mnuDominios,
             this.mnuSobre,
@@ -188,6 +198,7 @@
             this.mnuSobre.Name = "mnuSobre";
             this.mnuSobre.Size = new System.Drawing.Size(73, 28);
             this.mnuSobre.Text = "&Sobre";
+            this.mnuSobre.Click += new System.EventHandler(this.mnuSobre_Click);
             // 
             // tmrPrincipal
             // 
@@ -224,7 +235,7 @@
             this.lblUsuario,
             this.lblConexao,
             this.lblTempo});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 428);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 533);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(800, 22);
             this.statusStrip1.TabIndex = 4;
@@ -234,7 +245,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::SenacHair.Properties.Resources.Senac_Hair_Formatado1;
+            this.ClientSize = new System.Drawing.Size(800, 555);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.statusStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -252,16 +264,12 @@
         #endregion
 
         private System.Windows.Forms.ToolStripMenuItem mnuSair;
-        private System.Windows.Forms.ToolStripMenuItem mnuTiposTelefone;
-        private System.Windows.Forms.ToolStripMenuItem mnuTipos;
-        private System.Windows.Forms.ToolStripMenuItem mnuSituacoes;
-        private System.Windows.Forms.ToolStripMenuItem mnuProcedimentos;
         private System.Windows.Forms.ToolStripMenuItem mnuFormasPagamento;
         private System.Windows.Forms.ToolStripMenuItem mnuDominios;
         private System.Windows.Forms.ToolStripMenuItem mnuAgendamentos;
-        private System.Windows.Forms.ToolStripMenuItem mnuCadastroDentista;
-        private System.Windows.Forms.ToolStripMenuItem mnuDentistas;
-        private System.Windows.Forms.ToolStripMenuItem mnuCadastroPaciente;
+        private System.Windows.Forms.ToolStripMenuItem mnuCadastroCabeleireiro;
+        private System.Windows.Forms.ToolStripMenuItem mnuCabeleireiros;
+        private System.Windows.Forms.ToolStripMenuItem mnuCadastroClientes;
         private System.Windows.Forms.ToolStripMenuItem mnuPacientes;
         private System.Windows.Forms.ToolStripMenuItem mnuCadastroUsuario;
         private System.Windows.Forms.ToolStripMenuItem mnuUsuarios;
@@ -272,5 +280,9 @@
         private System.Windows.Forms.ToolStripStatusLabel lblConexao;
         private System.Windows.Forms.ToolStripStatusLabel lblUsuario;
         private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripMenuItem mnuEspecialidade;
+        private System.Windows.Forms.ToolStripMenuItem mnuProcedimentos;
+        private System.Windows.Forms.ToolStripMenuItem mnuSituacaoAgendamento;
+        private System.Windows.Forms.ToolStripMenuItem mnuTiposTelefone;
     }
 }

@@ -49,12 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
+    <Compile Include="AcessoBD.cs" />
+    <Compile Include="Agendamento.cs" />
+    <Compile Include="Cliente.cs" />
+    <Compile Include="Cabeleireiro.cs" />
+    <Compile Include="Especialidade.cs" />
+    <Compile Include="FormaPagamento.cs" />
     <Compile Include="frmAgendamento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,12 +115,6 @@
     <Compile Include="frmSobre.Designer.cs">
       <DependentUpon>frmSobre.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTipoCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmTipoCliente.Designer.cs">
-      <DependentUpon>frmTipoCliente.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmTipoTelefone.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,11 +128,12 @@
       <DependentUpon>frmUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Global.cs" />
+    <Compile Include="Procedimento.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="Situacao.cs" />
+    <Compile Include="TipoTelefone.cs" />
+    <Compile Include="Usuario.cs" />
     <EmbeddedResource Include="frmAgendamento.resx">
       <DependentUpon>frmAgendamento.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,9 +163,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSobre.resx">
       <DependentUpon>frmSobre.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTipoCliente.resx">
-      <DependentUpon>frmTipoCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTipoTelefone.resx">
       <DependentUpon>frmTipoTelefone.cs</DependentUpon>
@@ -290,6 +282,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\telephone2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Senac_Hair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Senac_Hair_Formatado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Senac_Hair_Formatado1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Senac_Hair_Sobre.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

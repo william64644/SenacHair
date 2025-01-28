@@ -343,6 +343,56 @@ namespace SenacHair.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap salon {
+            get {
+                object obj = ResourceManager.GetObject("salon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Senac_Hair {
+            get {
+                object obj = ResourceManager.GetObject("Senac_Hair", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Senac_Hair_Formatado {
+            get {
+                object obj = ResourceManager.GetObject("Senac_Hair_Formatado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Senac_Hair_Formatado1 {
+            get {
+                object obj = ResourceManager.GetObject("Senac_Hair_Formatado1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Senac_Hair_Sobre {
+            get {
+                object obj = ResourceManager.GetObject("Senac_Hair_Sobre", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap stockbroker2 {
             get {
                 object obj = ResourceManager.GetObject("stockbroker2", resourceCulture);

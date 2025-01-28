@@ -177,7 +177,7 @@
             this.Controls.Add(this.grpPesquisa);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmEspecialidade";
-            this.Text = "frmEspecialidade";
+            this.Text = "frmCabeleireiro Especialidade";
             this.grpLista.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdDados)).EndInit();
             this.grpDados.ResumeLayout(false);

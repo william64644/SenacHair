@@ -40,8 +40,6 @@
             this.btnGravar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.grpDados = new System.Windows.Forms.GroupBox();
-            this.cboTipoCliente = new System.Windows.Forms.ComboBox();
-            this.lblTipoCliente = new System.Windows.Forms.Label();
             this.lblCPF = new System.Windows.Forms.Label();
             this.txtCPF = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -98,7 +96,7 @@
             // btnLimpar
             // 
             this.btnLimpar.Image = global::SenacHair.Properties.Resources.eraser;
-            this.btnLimpar.Location = new System.Drawing.Point(133, 411);
+            this.btnLimpar.Location = new System.Drawing.Point(133, 379);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(115, 41);
             this.btnLimpar.TabIndex = 28;
@@ -124,7 +122,6 @@
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(265, 20);
             this.txtPesquisa.TabIndex = 0;
-            this.txtPesquisa.Text = "ua";
             // 
             // lblPesquisa
             // 
@@ -138,7 +135,7 @@
             // btnGravar
             // 
             this.btnGravar.Image = global::SenacHair.Properties.Resources.FloppyDisks;
-            this.btnGravar.Location = new System.Drawing.Point(12, 411);
+            this.btnGravar.Location = new System.Drawing.Point(12, 379);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(115, 41);
             this.btnGravar.TabIndex = 27;
@@ -150,7 +147,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Image = global::SenacHair.Properties.Resources.exit;
-            this.btnCancelar.Location = new System.Drawing.Point(256, 411);
+            this.btnCancelar.Location = new System.Drawing.Point(256, 379);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(115, 41);
             this.btnCancelar.TabIndex = 29;
@@ -163,36 +160,16 @@
             // 
             this.grpDados.Controls.Add(this.lblCelular);
             this.grpDados.Controls.Add(this.txtCelular);
-            this.grpDados.Controls.Add(this.cboTipoCliente);
-            this.grpDados.Controls.Add(this.lblTipoCliente);
             this.grpDados.Controls.Add(this.lblCPF);
             this.grpDados.Controls.Add(this.txtCPF);
             this.grpDados.Controls.Add(this.label5);
             this.grpDados.Controls.Add(this.txtNome);
-            this.grpDados.Location = new System.Drawing.Point(12, 292);
+            this.grpDados.Location = new System.Drawing.Point(12, 289);
             this.grpDados.Name = "grpDados";
-            this.grpDados.Size = new System.Drawing.Size(360, 113);
+            this.grpDados.Size = new System.Drawing.Size(360, 84);
             this.grpDados.TabIndex = 26;
             this.grpDados.TabStop = false;
             this.grpDados.Text = "Dados para Cadastro";
-            // 
-            // cboTipoCliente
-            // 
-            this.cboTipoCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboTipoCliente.FormattingEnabled = true;
-            this.cboTipoCliente.Location = new System.Drawing.Point(94, 73);
-            this.cboTipoCliente.Name = "cboTipoCliente";
-            this.cboTipoCliente.Size = new System.Drawing.Size(254, 21);
-            this.cboTipoCliente.TabIndex = 3;
-            // 
-            // lblTipoCliente
-            // 
-            this.lblTipoCliente.AutoSize = true;
-            this.lblTipoCliente.Location = new System.Drawing.Point(10, 76);
-            this.lblTipoCliente.Name = "lblTipoCliente";
-            this.lblTipoCliente.Size = new System.Drawing.Size(78, 13);
-            this.lblTipoCliente.TabIndex = 21;
-            this.lblTipoCliente.Text = "Tipo de Cliente";
             // 
             // lblCPF
             // 
@@ -234,7 +211,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(383, 461);
+            this.ClientSize = new System.Drawing.Size(383, 434);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.grpPesquisa);
             this.Controls.Add(this.btnGravar);
@@ -266,8 +243,6 @@
         private System.Windows.Forms.Button btnGravar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.GroupBox grpDados;
-        private System.Windows.Forms.ComboBox cboTipoCliente;
-        private System.Windows.Forms.Label lblTipoCliente;
         private System.Windows.Forms.Label lblCPF;
         private System.Windows.Forms.TextBox txtCPF;
         private System.Windows.Forms.Label label5;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HappySmile;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,6 +17,7 @@ namespace SenacHair
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Global.MontarStringConexao();
 
             //Instanciamos um objeto do formulario de login para autenticarmos o usuário
             frmLogin frm = new frmLogin();

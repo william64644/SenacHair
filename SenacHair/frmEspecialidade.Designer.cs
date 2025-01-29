@@ -54,7 +54,7 @@
             this.grpLista.Size = new System.Drawing.Size(360, 215);
             this.grpLista.TabIndex = 25;
             this.grpLista.TabStop = false;
-            this.grpLista.Text = "Procedimentos  Cadastrados";
+            this.grpLista.Text = "Especialidade  Cadastradas";
             // 
             // grdDados
             // 
@@ -72,15 +72,16 @@
             this.grdDados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdDados.Size = new System.Drawing.Size(342, 190);
             this.grdDados.TabIndex = 0;
+            this.grdDados.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdDados_CellClick);
             // 
             // lblEspecialidade
             // 
             this.lblEspecialidade.AutoSize = true;
             this.lblEspecialidade.Location = new System.Drawing.Point(6, 26);
             this.lblEspecialidade.Name = "lblEspecialidade";
-            this.lblEspecialidade.Size = new System.Drawing.Size(77, 13);
+            this.lblEspecialidade.Size = new System.Drawing.Size(73, 13);
             this.lblEspecialidade.TabIndex = 19;
-            this.lblEspecialidade.Text = "Procedimentos";
+            this.lblEspecialidade.Text = "Especialidade";
             // 
             // txtEspecialidade
             // 
@@ -96,6 +97,7 @@
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(265, 20);
             this.txtPesquisa.TabIndex = 0;
+            this.txtPesquisa.TextChanged += new System.EventHandler(this.txtPesquisa_TextChanged);
             // 
             // lblPesquisa
             // 
@@ -139,6 +141,7 @@
             this.btnLimpar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnGravar
             // 
@@ -151,6 +154,7 @@
             this.btnGravar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGravar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGravar.UseVisualStyleBackColor = true;
+            this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
             // 
             // btnCancelar
             // 
@@ -163,6 +167,7 @@
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // frmEspecialidade
             // 
@@ -175,9 +180,14 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.grpDados);
             this.Controls.Add(this.grpPesquisa);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmEspecialidade";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCabeleireiro Especialidade";
+            this.Load += new System.EventHandler(this.frmEspecialidade_Load);
             this.grpLista.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdDados)).EndInit();
             this.grpDados.ResumeLayout(false);

@@ -35,15 +35,15 @@
             this.grpPesquisa = new System.Windows.Forms.GroupBox();
             this.txtPesquisa = new System.Windows.Forms.TextBox();
             this.lblPesquisa = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblNome = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblConfirmacao = new System.Windows.Forms.Label();
             this.grpLista = new System.Windows.Forms.GroupBox();
             this.grdDados = new System.Windows.Forms.DataGridView();
             this.txtConfirmacao = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblSenha = new System.Windows.Forms.Label();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.grpDados = new System.Windows.Forms.GroupBox();
             this.btnLimpar = new System.Windows.Forms.Button();
@@ -106,6 +106,7 @@
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(265, 20);
             this.txtPesquisa.TabIndex = 0;
+            this.txtPesquisa.TextChanged += new System.EventHandler(this.txtPesquisa_TextChanged);
             // 
             // lblPesquisa
             // 
@@ -116,14 +117,14 @@
             this.lblPesquisa.TabIndex = 0;
             this.lblPesquisa.Text = "Pesquisar por";
             // 
-            // label5
+            // lblNome
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 51);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "Nome";
+            this.lblNome.AutoSize = true;
+            this.lblNome.Location = new System.Drawing.Point(6, 51);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(35, 13);
+            this.lblNome.TabIndex = 20;
+            this.lblNome.Text = "Nome";
             // 
             // txtNome
             // 
@@ -133,14 +134,14 @@
             this.txtNome.Size = new System.Drawing.Size(221, 20);
             this.txtNome.TabIndex = 1;
             // 
-            // label2
+            // lblUsuario
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "Usuário";
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Location = new System.Drawing.Point(6, 26);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(43, 13);
+            this.lblUsuario.TabIndex = 19;
+            this.lblUsuario.Text = "Usuário";
             // 
             // txtUsuario
             // 
@@ -150,14 +151,14 @@
             this.txtUsuario.Size = new System.Drawing.Size(221, 20);
             this.txtUsuario.TabIndex = 0;
             // 
-            // label4
+            // lblConfirmacao
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(166, 78);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 13);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "Confirmação";
+            this.lblConfirmacao.AutoSize = true;
+            this.lblConfirmacao.Location = new System.Drawing.Point(166, 78);
+            this.lblConfirmacao.Name = "lblConfirmacao";
+            this.lblConfirmacao.Size = new System.Drawing.Size(66, 13);
+            this.lblConfirmacao.TabIndex = 18;
+            this.lblConfirmacao.Text = "Confirmação";
             // 
             // grpLista
             // 
@@ -185,6 +186,7 @@
             this.grdDados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdDados.Size = new System.Drawing.Size(342, 190);
             this.grdDados.TabIndex = 0;
+            this.grdDados.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdDados_CellClick);
             // 
             // txtConfirmacao
             // 
@@ -196,14 +198,14 @@
             this.txtConfirmacao.TabIndex = 3;
             this.txtConfirmacao.UseSystemPasswordChar = true;
             // 
-            // label3
+            // lblSenha
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 78);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 13);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Senha";
+            this.lblSenha.AutoSize = true;
+            this.lblSenha.Location = new System.Drawing.Point(7, 78);
+            this.lblSenha.Name = "lblSenha";
+            this.lblSenha.Size = new System.Drawing.Size(38, 13);
+            this.lblSenha.TabIndex = 17;
+            this.lblSenha.Text = "Senha";
             // 
             // txtSenha
             // 
@@ -218,13 +220,13 @@
             // grpDados
             // 
             this.grpDados.Controls.Add(this.grpStatus);
-            this.grpDados.Controls.Add(this.label5);
+            this.grpDados.Controls.Add(this.lblNome);
             this.grpDados.Controls.Add(this.txtNome);
-            this.grpDados.Controls.Add(this.label2);
+            this.grpDados.Controls.Add(this.lblUsuario);
             this.grpDados.Controls.Add(this.txtUsuario);
-            this.grpDados.Controls.Add(this.label4);
+            this.grpDados.Controls.Add(this.lblConfirmacao);
             this.grpDados.Controls.Add(this.txtConfirmacao);
-            this.grpDados.Controls.Add(this.label3);
+            this.grpDados.Controls.Add(this.lblSenha);
             this.grpDados.Controls.Add(this.txtSenha);
             this.grpDados.Location = new System.Drawing.Point(12, 292);
             this.grpDados.Name = "grpDados";
@@ -244,6 +246,7 @@
             this.btnLimpar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnGravar
             // 
@@ -256,6 +259,7 @@
             this.btnGravar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGravar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGravar.UseVisualStyleBackColor = true;
+            this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
             // 
             // btnCancelar
             // 
@@ -268,6 +272,7 @@
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // frmUsuario
             // 
@@ -280,9 +285,14 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.grpLista);
             this.Controls.Add(this.grpDados);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmUsuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmUsuario";
+            this.Load += new System.EventHandler(this.frmUsuario_Load);
             this.grpStatus.ResumeLayout(false);
             this.grpStatus.PerformLayout();
             this.grpPesquisa.ResumeLayout(false);
@@ -302,15 +312,15 @@
         private System.Windows.Forms.GroupBox grpPesquisa;
         private System.Windows.Forms.TextBox txtPesquisa;
         private System.Windows.Forms.Label lblPesquisa;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblConfirmacao;
         private System.Windows.Forms.GroupBox grpLista;
         private System.Windows.Forms.DataGridView grdDados;
         private System.Windows.Forms.TextBox txtConfirmacao;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblSenha;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.GroupBox grpDados;
         private System.Windows.Forms.Button btnLimpar;

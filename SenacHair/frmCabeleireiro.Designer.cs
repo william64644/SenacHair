@@ -31,16 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCabeleireiro));
             this.lblPesquisa = new System.Windows.Forms.Label();
             this.btnRem = new System.Windows.Forms.Button();
-            this.lstProcedimentos = new System.Windows.Forms.ListBox();
+            this.lstEspecialidade = new System.Windows.Forms.ListBox();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.cboEspecialidades = new System.Windows.Forms.ComboBox();
-            this.lblEspecialidades = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.cboEspecialidade = new System.Windows.Forms.ComboBox();
+            this.lblEspecialidade = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
             this.txtPesquisa = new System.Windows.Forms.TextBox();
             this.grpPesquisa = new System.Windows.Forms.GroupBox();
             this.grdDados = new System.Windows.Forms.DataGridView();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblNome = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.grpDados = new System.Windows.Forms.GroupBox();
             this.grpLista = new System.Windows.Forms.GroupBox();
@@ -73,13 +73,13 @@
             this.btnRem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnRem.UseVisualStyleBackColor = true;
             // 
-            // lstProcedimentos
+            // lstEspecialidade
             // 
-            this.lstProcedimentos.FormattingEnabled = true;
-            this.lstProcedimentos.Location = new System.Drawing.Point(94, 100);
-            this.lstProcedimentos.Name = "lstProcedimentos";
-            this.lstProcedimentos.Size = new System.Drawing.Size(223, 108);
-            this.lstProcedimentos.TabIndex = 24;
+            this.lstEspecialidade.FormattingEnabled = true;
+            this.lstEspecialidade.Location = new System.Drawing.Point(94, 100);
+            this.lstEspecialidade.Name = "lstEspecialidade";
+            this.lstEspecialidade.Size = new System.Drawing.Size(223, 108);
+            this.lstEspecialidade.TabIndex = 24;
             // 
             // btnAdd
             // 
@@ -91,33 +91,34 @@
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // cboEspecialidades
+            // cboEspecialidade
             // 
-            this.cboEspecialidades.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboEspecialidades.FormattingEnabled = true;
-            this.cboEspecialidades.Location = new System.Drawing.Point(94, 73);
-            this.cboEspecialidades.Name = "cboEspecialidades";
-            this.cboEspecialidades.Size = new System.Drawing.Size(223, 21);
-            this.cboEspecialidades.TabIndex = 22;
+            this.cboEspecialidade.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEspecialidade.FormattingEnabled = true;
+            this.cboEspecialidade.Location = new System.Drawing.Point(94, 73);
+            this.cboEspecialidade.Name = "cboEspecialidade";
+            this.cboEspecialidade.Size = new System.Drawing.Size(223, 21);
+            this.cboEspecialidade.TabIndex = 22;
             // 
-            // lblEspecialidades
+            // lblEspecialidade
             // 
-            this.lblEspecialidades.AutoSize = true;
-            this.lblEspecialidades.Location = new System.Drawing.Point(10, 76);
-            this.lblEspecialidades.Name = "lblEspecialidades";
-            this.lblEspecialidades.Size = new System.Drawing.Size(77, 13);
-            this.lblEspecialidades.TabIndex = 21;
-            this.lblEspecialidades.Text = "Procedimentos";
+            this.lblEspecialidade.AutoSize = true;
+            this.lblEspecialidade.Location = new System.Drawing.Point(10, 76);
+            this.lblEspecialidade.Name = "lblEspecialidade";
+            this.lblEspecialidade.Size = new System.Drawing.Size(78, 13);
+            this.lblEspecialidade.TabIndex = 21;
+            this.lblEspecialidade.Text = "Especialidades";
             // 
-            // label1
+            // lblEmail
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 49);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 13);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "Email";
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(10, 49);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(32, 13);
+            this.lblEmail.TabIndex = 22;
+            this.lblEmail.Text = "Email";
             // 
             // txtPesquisa
             // 
@@ -125,6 +126,7 @@
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(265, 20);
             this.txtPesquisa.TabIndex = 0;
+            this.txtPesquisa.TextChanged += new System.EventHandler(this.txtPesquisa_TextChanged);
             // 
             // grpPesquisa
             // 
@@ -153,6 +155,7 @@
             this.grdDados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdDados.Size = new System.Drawing.Size(342, 190);
             this.grdDados.TabIndex = 0;
+            this.grdDados.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdDados_CellClick);
             // 
             // txtEmail
             // 
@@ -162,14 +165,14 @@
             this.txtEmail.Size = new System.Drawing.Size(293, 20);
             this.txtEmail.TabIndex = 21;
             // 
-            // label5
+            // lblNome
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(10, 23);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "Nome";
+            this.lblNome.AutoSize = true;
+            this.lblNome.Location = new System.Drawing.Point(10, 23);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(35, 13);
+            this.lblNome.TabIndex = 20;
+            this.lblNome.Text = "Nome";
             // 
             // txtNome
             // 
@@ -182,13 +185,13 @@
             // grpDados
             // 
             this.grpDados.Controls.Add(this.btnRem);
-            this.grpDados.Controls.Add(this.lstProcedimentos);
+            this.grpDados.Controls.Add(this.lstEspecialidade);
             this.grpDados.Controls.Add(this.btnAdd);
-            this.grpDados.Controls.Add(this.cboEspecialidades);
-            this.grpDados.Controls.Add(this.lblEspecialidades);
-            this.grpDados.Controls.Add(this.label1);
+            this.grpDados.Controls.Add(this.cboEspecialidade);
+            this.grpDados.Controls.Add(this.lblEspecialidade);
+            this.grpDados.Controls.Add(this.lblEmail);
             this.grpDados.Controls.Add(this.txtEmail);
-            this.grpDados.Controls.Add(this.label5);
+            this.grpDados.Controls.Add(this.lblNome);
             this.grpDados.Controls.Add(this.txtNome);
             this.grpDados.Location = new System.Drawing.Point(12, 292);
             this.grpDados.Name = "grpDados";
@@ -218,6 +221,7 @@
             this.btnLimpar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnGravar
             // 
@@ -230,6 +234,7 @@
             this.btnGravar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGravar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGravar.UseVisualStyleBackColor = true;
+            this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
             // 
             // btnCancelar
             // 
@@ -242,6 +247,7 @@
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // frmCabeleireiro
             // 
@@ -254,9 +260,14 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.grpDados);
             this.Controls.Add(this.grpLista);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmCabeleireiro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCabeleireiro";
+            this.Load += new System.EventHandler(this.frmCabeleireiro_Load);
             this.grpPesquisa.ResumeLayout(false);
             this.grpPesquisa.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdDados)).EndInit();
@@ -270,16 +281,16 @@
         #endregion
         private System.Windows.Forms.Label lblPesquisa;
         private System.Windows.Forms.Button btnRem;
-        private System.Windows.Forms.ListBox lstProcedimentos;
+        private System.Windows.Forms.ListBox lstEspecialidade;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.ComboBox cboEspecialidades;
-        private System.Windows.Forms.Label lblEspecialidades;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cboEspecialidade;
+        private System.Windows.Forms.Label lblEspecialidade;
+        private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.TextBox txtPesquisa;
         private System.Windows.Forms.GroupBox grpPesquisa;
         private System.Windows.Forms.DataGridView grdDados;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.GroupBox grpDados;
         private System.Windows.Forms.GroupBox grpLista;

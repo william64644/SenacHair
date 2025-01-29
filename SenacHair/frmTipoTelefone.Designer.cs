@@ -177,7 +177,10 @@
             this.Controls.Add(this.grpDados);
             this.Controls.Add(this.grpPesquisa);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmTipoTelefone";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmTipoTelefone";
             this.Load += new System.EventHandler(this.frmTipoTelefone_Load);
             this.grpLista.ResumeLayout(false);

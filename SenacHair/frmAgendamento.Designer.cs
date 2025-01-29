@@ -33,14 +33,14 @@
             this.grdAgendamento = new System.Windows.Forms.DataGridView();
             this.dtpAgendamento = new System.Windows.Forms.DateTimePicker();
             this.lblData = new System.Windows.Forms.Label();
-            this.cboDentista = new System.Windows.Forms.ComboBox();
-            this.lblDentista = new System.Windows.Forms.Label();
+            this.cboCabeleireiro = new System.Windows.Forms.ComboBox();
+            this.lblCabeleireiro = new System.Windows.Forms.Label();
             this.grpCliente = new System.Windows.Forms.GroupBox();
             this.lblCelular = new System.Windows.Forms.Label();
             this.txtCelular = new System.Windows.Forms.TextBox();
             this.lblCPF = new System.Windows.Forms.Label();
             this.txtCPF = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblNome = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.grpProcedimento = new System.Windows.Forms.GroupBox();
             this.btnRem = new System.Windows.Forms.Button();
@@ -67,6 +67,7 @@
             this.grpAgendamento.Size = new System.Drawing.Size(441, 352);
             this.grpAgendamento.TabIndex = 7;
             this.grpAgendamento.TabStop = false;
+            this.grpAgendamento.Text = "Agendamentos";
             // 
             // grdAgendamento
             // 
@@ -75,14 +76,15 @@
             this.grdAgendamento.AllowUserToResizeColumns = false;
             this.grdAgendamento.AllowUserToResizeRows = false;
             this.grdAgendamento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdAgendamento.Location = new System.Drawing.Point(6, 10);
+            this.grdAgendamento.Location = new System.Drawing.Point(6, 19);
             this.grdAgendamento.MultiSelect = false;
             this.grdAgendamento.Name = "grdAgendamento";
             this.grdAgendamento.ReadOnly = true;
             this.grdAgendamento.RowHeadersVisible = false;
             this.grdAgendamento.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdAgendamento.Size = new System.Drawing.Size(428, 336);
+            this.grdAgendamento.Size = new System.Drawing.Size(428, 327);
             this.grdAgendamento.TabIndex = 0;
+            this.grdAgendamento.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdAgendamento_CellClick);
             // 
             // dtpAgendamento
             // 
@@ -95,30 +97,31 @@
             // lblData
             // 
             this.lblData.AutoSize = true;
-            this.lblData.Location = new System.Drawing.Point(333, 12);
+            this.lblData.Location = new System.Drawing.Point(333, 14);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(30, 13);
             this.lblData.TabIndex = 5;
             this.lblData.Text = "Data";
             // 
-            // cboDentista
+            // cboCabeleireiro
             // 
-            this.cboDentista.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboDentista.FormattingEnabled = true;
-            this.cboDentista.Location = new System.Drawing.Point(80, 12);
-            this.cboDentista.Name = "cboDentista";
-            this.cboDentista.Size = new System.Drawing.Size(236, 21);
-            this.cboDentista.TabIndex = 9;
+            this.cboCabeleireiro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCabeleireiro.FormattingEnabled = true;
+            this.cboCabeleireiro.Location = new System.Drawing.Point(80, 12);
+            this.cboCabeleireiro.Name = "cboCabeleireiro";
+            this.cboCabeleireiro.Size = new System.Drawing.Size(236, 21);
+            this.cboCabeleireiro.TabIndex = 9;
+            this.cboCabeleireiro.SelectedIndexChanged += new System.EventHandler(this.cboCabeleireiro_SelectedIndexChanged);
             // 
-            // lblDentista
+            // lblCabeleireiro
             // 
-            this.lblDentista.AutoSize = true;
-            this.lblDentista.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblDentista.Location = new System.Drawing.Point(15, 14);
-            this.lblDentista.Name = "lblDentista";
-            this.lblDentista.Size = new System.Drawing.Size(62, 13);
-            this.lblDentista.TabIndex = 8;
-            this.lblDentista.Text = "Cabeleireiro";
+            this.lblCabeleireiro.AutoSize = true;
+            this.lblCabeleireiro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblCabeleireiro.Location = new System.Drawing.Point(15, 14);
+            this.lblCabeleireiro.Name = "lblCabeleireiro";
+            this.lblCabeleireiro.Size = new System.Drawing.Size(62, 13);
+            this.lblCabeleireiro.TabIndex = 8;
+            this.lblCabeleireiro.Text = "Cabeleireiro";
             // 
             // grpCliente
             // 
@@ -126,7 +129,7 @@
             this.grpCliente.Controls.Add(this.txtCelular);
             this.grpCliente.Controls.Add(this.lblCPF);
             this.grpCliente.Controls.Add(this.txtCPF);
-            this.grpCliente.Controls.Add(this.label5);
+            this.grpCliente.Controls.Add(this.lblNome);
             this.grpCliente.Controls.Add(this.txtNome);
             this.grpCliente.Location = new System.Drawing.Point(459, 50);
             this.grpCliente.Name = "grpCliente";
@@ -170,15 +173,17 @@
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(113, 20);
             this.txtCPF.TabIndex = 0;
+            this.txtCPF.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPF_KeyPress);
+            this.txtCPF.Leave += new System.EventHandler(this.txtCPF_Leave);
             // 
-            // label5
+            // lblNome
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(10, 23);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "Nome";
+            this.lblNome.AutoSize = true;
+            this.lblNome.Location = new System.Drawing.Point(10, 23);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(35, 13);
+            this.lblNome.TabIndex = 20;
+            this.lblNome.Text = "Nome";
             // 
             // txtNome
             // 
@@ -213,6 +218,7 @@
             this.btnRem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnRem.UseVisualStyleBackColor = true;
+            this.btnRem.Click += new System.EventHandler(this.btnRem_Click);
             // 
             // lstProcedimentos
             // 
@@ -232,6 +238,7 @@
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // cboProcedimentos
             // 
@@ -280,6 +287,7 @@
             this.btnLimpar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnGravar
             // 
@@ -292,6 +300,7 @@
             this.btnGravar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGravar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGravar.UseVisualStyleBackColor = true;
+            this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
             // 
             // btnCancelar
             // 
@@ -304,6 +313,7 @@
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // frmAgendamento
             // 
@@ -320,11 +330,16 @@
             this.Controls.Add(this.grpAgendamento);
             this.Controls.Add(this.dtpAgendamento);
             this.Controls.Add(this.lblData);
-            this.Controls.Add(this.cboDentista);
-            this.Controls.Add(this.lblDentista);
+            this.Controls.Add(this.cboCabeleireiro);
+            this.Controls.Add(this.lblCabeleireiro);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmAgendamento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAgendamento";
+            this.Load += new System.EventHandler(this.frmAgendamento_Load);
             this.grpAgendamento.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdAgendamento)).EndInit();
             this.grpCliente.ResumeLayout(false);
@@ -342,14 +357,14 @@
         private System.Windows.Forms.DataGridView grdAgendamento;
         private System.Windows.Forms.DateTimePicker dtpAgendamento;
         private System.Windows.Forms.Label lblData;
-        private System.Windows.Forms.ComboBox cboDentista;
-        private System.Windows.Forms.Label lblDentista;
+        private System.Windows.Forms.ComboBox cboCabeleireiro;
+        private System.Windows.Forms.Label lblCabeleireiro;
         private System.Windows.Forms.GroupBox grpCliente;
         private System.Windows.Forms.Label lblCelular;
         private System.Windows.Forms.TextBox txtCelular;
         private System.Windows.Forms.Label lblCPF;
         private System.Windows.Forms.TextBox txtCPF;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.GroupBox grpProcedimento;
         private System.Windows.Forms.Button btnRem;

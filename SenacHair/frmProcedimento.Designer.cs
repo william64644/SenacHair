@@ -176,8 +176,12 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.grpPesquisa);
             this.Controls.Add(this.grpDados);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmProcedimento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmProcedimento";
             ((System.ComponentModel.ISupportInitialize)(this.grdDados)).EndInit();
             this.grpLista.ResumeLayout(false);

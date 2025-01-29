@@ -86,8 +86,12 @@
             this.Controls.Add(this.lblSistema);
             this.Controls.Add(this.pctCliente);
             this.Controls.Add(this.btnCancelar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmSobre";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSobre";
             ((System.ComponentModel.ISupportInitialize)(this.pctCliente)).EndInit();
             this.ResumeLayout(false);

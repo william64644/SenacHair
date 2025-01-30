@@ -63,6 +63,7 @@
             this.grdDados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdDados.Size = new System.Drawing.Size(342, 190);
             this.grdDados.TabIndex = 0;
+            this.grdDados.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdDados_CellClick);
             // 
             // grpLista
             // 
@@ -140,6 +141,7 @@
             this.btnLimpar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnGravar
             // 
@@ -152,6 +154,7 @@
             this.btnGravar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGravar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGravar.UseVisualStyleBackColor = true;
+            this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
             // 
             // btnCancelar
             // 
@@ -164,6 +167,7 @@
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // frmProcedimento
             // 
@@ -183,6 +187,7 @@
             this.Name = "frmProcedimento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmProcedimento";
+            this.Load += new System.EventHandler(this.frmProcedimento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdDados)).EndInit();
             this.grpLista.ResumeLayout(false);
             this.grpPesquisa.ResumeLayout(false);

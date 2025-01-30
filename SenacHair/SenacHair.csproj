@@ -73,12 +73,6 @@
     <Compile Include="frmCabeleireiro.Designer.cs">
       <DependentUpon>frmCabeleireiro.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmEspecialidade.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEspecialidade.Designer.cs">
-      <DependentUpon>frmEspecialidade.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmFormaPagamento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,12 +109,6 @@
     <Compile Include="frmSobre.Designer.cs">
       <DependentUpon>frmSobre.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTipoTelefone.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmTipoTelefone.Designer.cs">
-      <DependentUpon>frmTipoTelefone.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,9 +131,6 @@
     <EmbeddedResource Include="frmCabeleireiro.resx">
       <DependentUpon>frmCabeleireiro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmEspecialidade.resx">
-      <DependentUpon>frmEspecialidade.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmFormaPagamento.resx">
       <DependentUpon>frmFormaPagamento.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,9 +148,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSobre.resx">
       <DependentUpon>frmSobre.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTipoTelefone.resx">
-      <DependentUpon>frmTipoTelefone.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUsuario.resx">
       <DependentUpon>frmUsuario.cs</DependentUpon>

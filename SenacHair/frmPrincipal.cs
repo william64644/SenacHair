@@ -54,10 +54,6 @@ namespace SenacHair
             AbrirForm(new frmFormaPagamento());
         }
 
-        private void mnuEspecialidade_Click(object sender, EventArgs e)
-        {
-            AbrirForm(new frmEspecialidade());
-        }
 
         private void mnuProcedimentos_Click(object sender, EventArgs e)
         {
@@ -69,10 +65,6 @@ namespace SenacHair
             AbrirForm(new frmSituacao());
         }
 
-        private void mnuTiposTelefone_Click(object sender, EventArgs e)
-        {
-            AbrirForm(new frmTipoTelefone());
-        }
 
         private void mnuSobre_Click(object sender, EventArgs e)
         {

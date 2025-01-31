@@ -17,7 +17,6 @@ namespace HappySmile
         public string nome { get; set; }
         public string cpf { get; set; }
         public string celular { get; set; }
-        public int idTipoCliente { get; set; }
         //Criamos o método construtor para definirmos valores
         //padrão para as propriedades no momento da instância do objeto
         public Cliente()
@@ -26,7 +25,6 @@ namespace HappySmile
             nome = string.Empty;
             cpf = string.Empty;
             celular = string.Empty;
-            idTipoCliente = 0;
         }
         //Instanciamos os objetos necessários para
         //a comunicação entre o objeto criado e o banco de dados
@@ -43,7 +41,7 @@ namespace HappySmile
                 //Limpamos a lista de parâmetros
                 lista.Clear();
                 //Definimos o comando SQL (SELECT)
-                sql = "select id, nome, cpf, celular, idTipo \n";
+                sql = "select id, nome, cpf, celular \n";
                 sql += "from tblCliente \n";
                 if (id != 0)
                 {
@@ -85,7 +83,6 @@ namespace HappySmile
                     nome = dt.Rows[0]["nome"].ToString();
                     cpf = dt.Rows[0]["cpf"].ToString();
                     celular = dt.Rows[0]["celular"].ToString();
-                    idTipoCliente = Convert.ToInt32(dt.Rows[0]["idTipo"]);
                     //Consultamos o convenio caso seja do tipo convenio
                 }
                 //Retornamos o DataTable com os clientes retornados na consulta

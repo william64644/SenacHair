@@ -37,14 +37,14 @@ namespace SenacHair
                 grdDados.DataSource = cliente.Consultar();
                 //Ocultar colunas
                 grdDados.Columns[0].Visible = false; //Id
-                grdDados.Columns[3].Visible = false; //Celular
-                grdDados.Columns[4].Visible = false; //idTipo
                 //Cabeçalho das colunas
                 grdDados.Columns[1].HeaderText = "Nome";
                 grdDados.Columns[2].HeaderText = "CPF";
+                grdDados.Columns[3].HeaderText = "Celular";
                 //Largura das colunas
-                grdDados.Columns[1].Width = 250;
-                grdDados.Columns[2].Width = 100;
+                grdDados.Columns[1].Width = 200;
+                grdDados.Columns[2].Width = 75;
+                grdDados.Columns[3].Width = 75;
 
             }
             catch (Exception ex)
@@ -215,5 +215,7 @@ namespace SenacHair
             //Chamamos o método para validar se a tecla pressionada é um número
             e.Handled = Global.SomenteNumeros(e.KeyChar, txtCPF);
         }
+
+
     }
 }

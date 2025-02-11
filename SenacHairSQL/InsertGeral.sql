@@ -1,10 +1,10 @@
--- Inserir dados na tabela tblSituacao
+
 INSERT INTO tblSituacao (situacao) VALUES 
   ('Agendada'),
   ('Efetivada'),
   ('Cancelada');
 
--- Inserir dados na tabela tblProcedimento
+
 INSERT INTO tblProcedimento (procedimento, valor) VALUES  
   ('Corte de cabelo', 40), 
   ('Penteado', 80),
@@ -43,14 +43,12 @@ INSERT INTO tblProcedimento (procedimento, valor) VALUES
   ('Desembaraço de barba', 25),
   ('Remodelagem de barba', 35);
 
--- Inserir dados na tabela tblFormaPagamento
 INSERT INTO tblFormaPagamento (FormaPagamento) VALUES  
   ('Dinheiro'), 
   ('PIX'),
   ('Débito'),
   ('Crédito');
 
--- Inserir dados na tabela tblCliente
 INSERT INTO tblCliente (nome, cpf, celular) VALUES 
   ('Maria Silva', '12345678901', '11999999999'),
   ('João Souza', '23456789012', '21988888888'),
@@ -58,17 +56,16 @@ INSERT INTO tblCliente (nome, cpf, celular) VALUES
   ('Pedro Rocha', '45678901234', '41966666666'),
   ('Carla Lima', '56789012345', '51955555555');
 
--- Inserir dados na tabela tblCabeleireiro
+
 INSERT INTO tblCabeleireiro (nome, email, telefone) VALUES 
   ('Fernanda Oliveira', 'fernanda@salao.com', '1122222222'),
   ('Ricardo Santos', 'ricardo@salao.com', '2133333333'),
   ('Juliana Pereira', 'juliana@salao.com', '3144444444');
 
--- Inserir dados na tabela tblAgendamento
+
 SET DATEFORMAT ymd;
 
 INSERT INTO tblAgendamento (data, idSituacao, idCliente, idCabeleireiro) VALUES
-  -- Agendamentos Originais
 	('2025-02-10 12:00:00.000', 1, 1, 1),
 	('2025-02-10 11:00:00.000', 2, 2, 2),
 	('2025-02-11 10:00:00.000', 3, 3, 3),
@@ -101,7 +98,6 @@ INSERT INTO tblAgendamento (data, idSituacao, idCliente, idCabeleireiro) VALUES
 	('2025-02-14 17:00:00.000', 1, 5, 2);
 
 
--- Inserir dados na tabela tblAgendamentoProcedimento
 INSERT INTO tblAgendamentoProcedimento (idAgendamento, idProcedimento) VALUES
   (1, 1), (1, 5),
   (2, 3),
@@ -114,7 +110,7 @@ INSERT INTO tblAgendamentoProcedimento (idAgendamento, idProcedimento) VALUES
   (9, 20),
   (10, 25), (10, 30);
 
--- Inserir dados na tabela tblPagamento
+
 INSERT INTO tblPagamento (valor, idAgendamento, idFormaPagamento) VALUES
   (190.00, 1, 1),
   (100.00, 2, 2),
@@ -127,7 +123,7 @@ INSERT INTO tblPagamento (valor, idAgendamento, idFormaPagamento) VALUES
   (60.00, 9, 1),
   (80.00, 10, 2);
 
--- Inserir mais usuários na tabela tblUsuario
+
 INSERT INTO tblUsuario (login, nome, password, ativo) VALUES
   ('fernanda', 'Fernanda Oliveira', '4c29f94d61f96dde64a65202a6de6700', 1),
   ('ricardo', 'Ricardo Santos', '4c29f94d61f96dde64a65202a6de6700', 1),

@@ -141,15 +141,15 @@ namespace SenacHair
             //Ocultar colunas que não devem ser visíveis para o usuário
             grdAgendamento.Columns[0].Visible = false; //Id
             grdAgendamento.Columns[3].Visible = false; //IdCliente
+            grdAgendamento.Columns[5].Visible = false; //CPF
             grdAgendamento.Columns[6].Visible = false; //IdDentista
             grdAgendamento.Columns[8].Visible = false; //IdSituacao
 
             //Definimos a largura das colunas
             grdAgendamento.Columns[1].Width = 50; //Hora
-            grdAgendamento.Columns[2].Width = 75; //Situação
-            grdAgendamento.Columns[4].Width = 275; //Cliente
-            grdAgendamento.Columns[5].Width = 75; //CPF
-            grdAgendamento.Columns[7].Width = 275; //Dentista
+            grdAgendamento.Columns[2].Width = 79; //Situação
+            grdAgendamento.Columns[4].Width = 245; //Cliente
+            grdAgendamento.Columns[7].Width = 245; //Dentista
 
             //Alterando o alinhamento das colunas
             grdAgendamento.Columns[1].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;

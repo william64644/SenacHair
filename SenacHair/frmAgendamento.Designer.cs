@@ -64,7 +64,7 @@
             this.grpAgendamento.Controls.Add(this.grdAgendamento);
             this.grpAgendamento.Location = new System.Drawing.Point(12, 40);
             this.grpAgendamento.Name = "grpAgendamento";
-            this.grpAgendamento.Size = new System.Drawing.Size(441, 352);
+            this.grpAgendamento.Size = new System.Drawing.Size(634, 379);
             this.grpAgendamento.TabIndex = 7;
             this.grpAgendamento.TabStop = false;
             this.grpAgendamento.Text = "Agendamentos";
@@ -82,14 +82,14 @@
             this.grdAgendamento.ReadOnly = true;
             this.grdAgendamento.RowHeadersVisible = false;
             this.grdAgendamento.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdAgendamento.Size = new System.Drawing.Size(428, 327);
+            this.grdAgendamento.Size = new System.Drawing.Size(622, 353);
             this.grdAgendamento.TabIndex = 0;
             this.grdAgendamento.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdAgendamento_CellClick);
             // 
             // dtpAgendamento
             // 
             this.dtpAgendamento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpAgendamento.Location = new System.Drawing.Point(369, 13);
+            this.dtpAgendamento.Location = new System.Drawing.Point(358, 10);
             this.dtpAgendamento.Name = "dtpAgendamento";
             this.dtpAgendamento.Size = new System.Drawing.Size(96, 20);
             this.dtpAgendamento.TabIndex = 6;
@@ -98,7 +98,7 @@
             // lblData
             // 
             this.lblData.AutoSize = true;
-            this.lblData.Location = new System.Drawing.Point(333, 14);
+            this.lblData.Location = new System.Drawing.Point(322, 12);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(30, 13);
             this.lblData.TabIndex = 5;
@@ -108,7 +108,7 @@
             // 
             this.cboCabeleireiro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCabeleireiro.FormattingEnabled = true;
-            this.cboCabeleireiro.Location = new System.Drawing.Point(80, 12);
+            this.cboCabeleireiro.Location = new System.Drawing.Point(80, 10);
             this.cboCabeleireiro.Name = "cboCabeleireiro";
             this.cboCabeleireiro.Size = new System.Drawing.Size(236, 21);
             this.cboCabeleireiro.TabIndex = 9;
@@ -118,7 +118,7 @@
             // 
             this.lblCabeleireiro.AutoSize = true;
             this.lblCabeleireiro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblCabeleireiro.Location = new System.Drawing.Point(15, 14);
+            this.lblCabeleireiro.Location = new System.Drawing.Point(15, 12);
             this.lblCabeleireiro.Name = "lblCabeleireiro";
             this.lblCabeleireiro.Size = new System.Drawing.Size(62, 13);
             this.lblCabeleireiro.TabIndex = 8;
@@ -132,7 +132,7 @@
             this.grpCliente.Controls.Add(this.txtCPF);
             this.grpCliente.Controls.Add(this.lblNome);
             this.grpCliente.Controls.Add(this.txtNome);
-            this.grpCliente.Location = new System.Drawing.Point(459, 50);
+            this.grpCliente.Location = new System.Drawing.Point(650, 50);
             this.grpCliente.Name = "grpCliente";
             this.grpCliente.Size = new System.Drawing.Size(358, 84);
             this.grpCliente.TabIndex = 10;
@@ -203,7 +203,7 @@
             this.grpProcedimento.Controls.Add(this.btnAdd);
             this.grpProcedimento.Controls.Add(this.cboProcedimentos);
             this.grpProcedimento.Controls.Add(this.lblProcedimento);
-            this.grpProcedimento.Location = new System.Drawing.Point(459, 167);
+            this.grpProcedimento.Location = new System.Drawing.Point(650, 192);
             this.grpProcedimento.Name = "grpProcedimento";
             this.grpProcedimento.Size = new System.Drawing.Size(360, 147);
             this.grpProcedimento.TabIndex = 28;
@@ -263,7 +263,7 @@
             // 
             this.cboSituacoes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboSituacoes.FormattingEnabled = true;
-            this.cboSituacoes.Location = new System.Drawing.Point(579, 320);
+            this.cboSituacoes.Location = new System.Drawing.Point(770, 345);
             this.cboSituacoes.Name = "cboSituacoes";
             this.cboSituacoes.Size = new System.Drawing.Size(238, 21);
             this.cboSituacoes.TabIndex = 33;
@@ -271,7 +271,7 @@
             // lblSituacao
             // 
             this.lblSituacao.AutoSize = true;
-            this.lblSituacao.Location = new System.Drawing.Point(456, 324);
+            this.lblSituacao.Location = new System.Drawing.Point(647, 349);
             this.lblSituacao.Name = "lblSituacao";
             this.lblSituacao.Size = new System.Drawing.Size(118, 13);
             this.lblSituacao.TabIndex = 34;
@@ -280,7 +280,7 @@
             // btnLimpar
             // 
             this.btnLimpar.Image = global::SenacHair.Properties.Resources.eraser;
-            this.btnLimpar.Location = new System.Drawing.Point(582, 349);
+            this.btnLimpar.Location = new System.Drawing.Point(773, 374);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(115, 41);
             this.btnLimpar.TabIndex = 31;
@@ -293,7 +293,7 @@
             // btnGravar
             // 
             this.btnGravar.Image = global::SenacHair.Properties.Resources.FloppyDisks;
-            this.btnGravar.Location = new System.Drawing.Point(461, 349);
+            this.btnGravar.Location = new System.Drawing.Point(652, 374);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(115, 41);
             this.btnGravar.TabIndex = 30;
@@ -306,7 +306,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Image = global::SenacHair.Properties.Resources.exit;
-            this.btnCancelar.Location = new System.Drawing.Point(705, 349);
+            this.btnCancelar.Location = new System.Drawing.Point(896, 374);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(115, 41);
             this.btnCancelar.TabIndex = 32;
@@ -320,7 +320,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(835, 402);
+            this.ClientSize = new System.Drawing.Size(1021, 426);
             this.Controls.Add(this.cboSituacoes);
             this.Controls.Add(this.lblSituacao);
             this.Controls.Add(this.btnLimpar);

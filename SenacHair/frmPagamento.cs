@@ -34,16 +34,21 @@ namespace SenacHair
         {
 
             grdAgendamento.Columns["id"].Visible = false;
+            grdAgendamento.Columns["idCliente"].Visible = false;
+            grdAgendamento.Columns["idCabeleireiro"].Visible = false;
+            grdAgendamento.Columns["idSituacao"].Visible = false;
+            grdAgendamento.Columns["hora"].Width = 70;
             grdAgendamento.Columns["cliente"].Width = 200;
-            grdAgendamento.Columns["cabeleireiro"].Width = 200;
-            grdAgendamento.Columns["situacao"].Width = 100;
+            grdAgendamento.Columns["cabeleireiro"].Width = 198;
+            grdAgendamento.Columns["cpf"].Width = 75;
+            grdAgendamento.Columns["situacao"].Width = 65;
         }
 
         private void ConfigurarGridProcedimentos()
         {
 
             grdProcedimento.Columns["id"].Visible = false;
-            grdProcedimento.Columns["procedimento"].Width = 250;
+            grdProcedimento.Columns["procedimento"].Width = 508;
             grdProcedimento.Columns["valor"].Width = 100;
         }
 

@@ -6,19 +6,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HappySmile
+namespace SenacHair
 {
     public class Procedimento
     {
         //Definimos as propriedades da classe
         public int id { get; set; }
         public string procedimento { get; set; }
+        public double valor { get; set; }
         //Criamos o método construtor para definirmos valores
         //padrão para as propriedades no momento da instância do objeto
         public Procedimento()
         {
             id = 0;
             procedimento = string.Empty;
+            valor = 0;
         }
         //Instanciamos os objetos necessários para
         //a comunicação entre o objeto criado e o banco de dados
@@ -36,7 +38,7 @@ namespace HappySmile
                 //Limpamos a lista de parâmetros
                 lista.Clear();
                 //Definimos o comando SQL (SELECT)
-                sql = "select id, procedimento \n";
+                sql = "select id, procedimento, valor \n";
                 sql += "from tblProcedimento \n";
                 if (id != 0)
                 {
@@ -67,6 +69,7 @@ namespace HappySmile
                     //Atribuímos os valores retornados a sua respectiva
                     //propriedade da classe
                     id = Convert.ToInt32(dt.Rows[0]["id"]);
+                    valor = Convert.ToDouble(dt.Rows[0]["valor"]);
                     procedimento = dt.Rows[0]["procedimento"].ToString();
                 }
                 //Retornamos o DataTable com os dentistas retornados na consulta

@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Security.Cryptography;
 
-namespace HappySmile
+namespace SenacHair
 {
     public class Usuario
     {

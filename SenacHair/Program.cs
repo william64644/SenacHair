@@ -1,4 +1,4 @@
-﻿using HappySmile;
+﻿using SenacHair;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,17 +19,18 @@ namespace SenacHair
             Application.SetCompatibleTextRenderingDefault(false);
             Global.MontarStringConexao();
 
-            //Instanciamos um objeto do formulario de login para autenticarmos o usuário
-            frmLogin frm = new frmLogin();
-            //Exibimos o formulário em modo proprietário
-            frm.ShowDialog();
+            ////Instanciamos um objeto do formulario de login para autenticarmos o usuário
+            //frmLogin frm = new frmLogin();
+            ////Exibimos o formulário em modo proprietário
+            //frm.ShowDialog();
 
-            if (frm.DialogResult == DialogResult.OK)
-            {
-                //Caso o formulário tenha retornado Ok como DialogResult, prosseguimos
-                //com a execução da aplicação
-                Application.Run(new frmPrincipal());
-            }
+            //if (frm.DialogResult == DialogResult.OK)
+            //{
+            //    //Caso o formulário tenha retornado Ok como DialogResult, prosseguimos
+            //    //com a execução da aplicação
+            //    Application.Run(new frmPrincipal());
+            //}
+            Application.Run(new frmPrincipal());
         }
     }
 }

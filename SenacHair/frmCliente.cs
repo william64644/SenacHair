@@ -1,4 +1,4 @@
-﻿using HappySmile;
+﻿using SenacHair;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,7 +17,6 @@ namespace SenacHair
         {
             InitializeComponent();
         }
-        bool load = false;
         Cliente cliente = new Cliente();
 
         private void frmCliente_Load(object sender, EventArgs e)
@@ -25,7 +24,6 @@ namespace SenacHair
             //Preenchemos o grid com os clientes existentes no banco de dados
             CarregarGrid();
             //Alteramos a flag informando que o LOAD do formulário foi finalizado
-            load = true;
         }
         private void CarregarGrid()
         {

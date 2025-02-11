@@ -1,4 +1,4 @@
-﻿using HappySmile;
+﻿using SenacHair;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -56,7 +56,7 @@ namespace SenacHair
             //Resetamos o objeto           
             formaPagamento = new FormaPagamento();
             //Atribuímos a forma de pagamento para pesquisa
-            formaPagamento.formaPagamento = txtPesquisa.Text;
+            formaPagamento.forma = txtPesquisa.Text;
             //Chamamos o método para preencher o Grid com o resultado do filtro aplicado
             CarregarGrid();
         }
@@ -65,12 +65,12 @@ namespace SenacHair
         {
             //Preenchemos os controle do formulário com suas
             //respectivas informações contidas no objeto
-            txtFormaPagamento.Text = formaPagamento.formaPagamento;
+            txtFormaPagamento.Text = formaPagamento.forma;
         }
         private void PreencherClasse()
         {
             //Atribuímos às propriedades do objeto os respectivos valores informados no formulário
-            formaPagamento.formaPagamento = txtFormaPagamento.Text;
+            formaPagamento.forma = txtFormaPagamento.Text;
         }
 
         private void btnGravar_Click(object sender, EventArgs e)

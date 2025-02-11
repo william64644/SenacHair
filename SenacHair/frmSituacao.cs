@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HappySmile
+namespace SenacHair
 {
     public partial class frmSituacao : Form
     {

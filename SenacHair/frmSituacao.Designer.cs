@@ -1,4 +1,4 @@
-﻿namespace HappySmile
+﻿namespace SenacHair
 {
     partial class frmSituacao
     {
@@ -188,7 +188,7 @@
             this.MinimizeBox = false;
             this.Name = "frmSituacao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Senac Hair - Cadastro de Situações";
+            this.Text = "Cadastro de Situações";
             this.Load += new System.EventHandler(this.frmSituacao_Load);
             this.grpLista.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdDados)).EndInit();

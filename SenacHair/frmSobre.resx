@@ -117,14 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lblTexto.Text" xml:space="preserve">
-    <value>Aviso: este programa de computador é protegido por leis 
-de direitos autorais e tratados internacionais. 
-A reprodução ou distribuição não autorizada deste 
-programa, ou de qualquer parte dele, poderá resultar em 
-severas punições civis e criminais, e os infratores serão 
-punidos dentro do máximo rigor permitido por lei.
-</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Este software é open source e licenciado sob os termos da GNU General Public License v3. Isso significa que você pode usar, modificar e redistribuir este software, desde que mantenha o código aberto e compartilhe quaisquer modificações sob a mesma licença.
+
+Contribuições são bem-vindas! Para mais informações, acesse o repositório oficial ou consulte a documentação.</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

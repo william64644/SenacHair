@@ -230,7 +230,7 @@
             this.MinimizeBox = false;
             this.Name = "frmCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmCliente";
+            this.Text = "Cliente";
             this.Load += new System.EventHandler(this.frmCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdDados)).EndInit();
             this.grpPesquisa.ResumeLayout(false);

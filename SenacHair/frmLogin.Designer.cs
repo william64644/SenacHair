@@ -47,52 +47,53 @@
             this.grpLogin.Controls.Add(this.txtUsuario);
             this.grpLogin.Controls.Add(this.lblSenha);
             this.grpLogin.Controls.Add(this.lblUsuario);
-            this.grpLogin.Location = new System.Drawing.Point(109, 12);
+            this.grpLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpLogin.Location = new System.Drawing.Point(265, 12);
             this.grpLogin.Name = "grpLogin";
-            this.grpLogin.Size = new System.Drawing.Size(207, 84);
+            this.grpLogin.Size = new System.Drawing.Size(220, 104);
             this.grpLogin.TabIndex = 9;
             this.grpLogin.TabStop = false;
             this.grpLogin.Text = "Dados para acesso";
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(60, 49);
+            this.txtSenha.Location = new System.Drawing.Point(78, 64);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(135, 20);
+            this.txtSenha.Size = new System.Drawing.Size(135, 22);
             this.txtSenha.TabIndex = 3;
             this.txtSenha.UseSystemPasswordChar = true;
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(60, 23);
+            this.txtUsuario.Location = new System.Drawing.Point(78, 35);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(135, 20);
+            this.txtUsuario.Size = new System.Drawing.Size(135, 22);
             this.txtUsuario.TabIndex = 2;
             // 
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
-            this.lblSenha.Location = new System.Drawing.Point(11, 52);
+            this.lblSenha.Location = new System.Drawing.Point(11, 64);
             this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(38, 13);
+            this.lblSenha.Size = new System.Drawing.Size(51, 16);
             this.lblSenha.TabIndex = 1;
             this.lblSenha.Text = "Senha";
             // 
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(11, 26);
+            this.lblUsuario.Location = new System.Drawing.Point(11, 38);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(43, 13);
+            this.lblUsuario.Size = new System.Drawing.Size(61, 16);
             this.lblUsuario.TabIndex = 0;
             this.lblUsuario.Text = "Usuário";
             // 
             // pctImagem
             // 
-            this.pctImagem.Image = global::SenacHair.Properties.Resources.Lock_1;
-            this.pctImagem.Location = new System.Drawing.Point(12, 10);
+            this.pctImagem.Image = global::SenacHair.Properties.Resources.Senac_Hair_Formatado1;
+            this.pctImagem.Location = new System.Drawing.Point(3, -2);
             this.pctImagem.Name = "pctImagem";
-            this.pctImagem.Size = new System.Drawing.Size(91, 134);
+            this.pctImagem.Size = new System.Drawing.Size(256, 177);
             this.pctImagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctImagem.TabIndex = 8;
             this.pctImagem.TabStop = false;
@@ -100,11 +101,11 @@
             // btnOk
             // 
             this.btnOk.Image = global::SenacHair.Properties.Resources.check;
-            this.btnOk.Location = new System.Drawing.Point(214, 102);
+            this.btnOk.Location = new System.Drawing.Point(373, 119);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(102, 44);
+            this.btnOk.Size = new System.Drawing.Size(112, 44);
             this.btnOk.TabIndex = 11;
-            this.btnOk.Text = "&Ok";
+            this.btnOk.Text = "&Entrar";
             this.btnOk.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnOk.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnOk.UseVisualStyleBackColor = true;
@@ -114,9 +115,9 @@
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelar.Image = global::SenacHair.Properties.Resources.exit;
-            this.btnCancelar.Location = new System.Drawing.Point(109, 102);
+            this.btnCancelar.Location = new System.Drawing.Point(265, 119);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(102, 44);
+            this.btnCancelar.Size = new System.Drawing.Size(108, 44);
             this.btnCancelar.TabIndex = 10;
             this.btnCancelar.Text = "&Cancelar";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -128,7 +129,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(337, 165);
+            this.ClientSize = new System.Drawing.Size(497, 177);
             this.Controls.Add(this.grpLogin);
             this.Controls.Add(this.pctImagem);
             this.Controls.Add(this.btnOk);
@@ -139,7 +140,7 @@
             this.MinimizeBox = false;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmLogin";
+            this.Text = "Login";
             this.grpLogin.ResumeLayout(false);
             this.grpLogin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctImagem)).EndInit();

@@ -1,4 +1,4 @@
-﻿using HappySmile;
+﻿using SenacHair;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -134,8 +134,8 @@ namespace SenacHair
             grdAgendamento.Columns.Add("idCliente", "idCliente");
             grdAgendamento.Columns.Add("cliente", "Cliente");
             grdAgendamento.Columns.Add("cpf", "CPF");
-            grdAgendamento.Columns.Add("idDentista", "idDentista");
-            grdAgendamento.Columns.Add("dentista", "Dentista");
+            grdAgendamento.Columns.Add("idCabeleireiro", "idCabeleireiro");
+            grdAgendamento.Columns.Add("Cabeleireiro", "Cabeleireiro");
             grdAgendamento.Columns.Add("idSituacao", "idSituacao");
 
             //Ocultar colunas que não devem ser visíveis para o usuário
@@ -180,7 +180,7 @@ namespace SenacHair
             //Armazenamos a data selecionada no calendário
             agendamento.data = dtpAgendamento.Value;
             //Armazenamos o id do dentista a ser consultado
-            agendamento.dentista.id = (int)cboCabeleireiro.SelectedValue;
+            agendamento.cabeleireiro.id = (int)cboCabeleireiro.SelectedValue;
 
             //definimos um bloco try/catch para garantir a execução
             //do fluxo fora do nosso ambiente
@@ -300,7 +300,7 @@ namespace SenacHair
                 //Caso o procedimento já tenha sido adicionado anteriormente
                 //Exibimos a mensagem ao usuário e não executamos nenhuma ação
                 MessageBox.Show("Procedimento já selecionado.",
-                    "Cadastro de Dentistas",
+                    "Cadastro de Cabeleireiro",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -319,7 +319,7 @@ namespace SenacHair
             //do procedimento selecionada
             string item = lstProcedimentos.Text;
             if (MessageBox.Show($"Deseja remover o item {item}?",
-                "Cadastro de Dentistas",
+                "Cadastro de Cabeleireiro",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question,
                 MessageBoxDefaultButton.Button2) == DialogResult.No) return;
             //Caso o usuário confirma a intenção, removemos o procedimento selecionada
@@ -399,7 +399,7 @@ namespace SenacHair
             }
             if (cboCabeleireiro.SelectedIndex == -1)
             {
-                msgErro += "Selecione o dentista.\n";
+                msgErro += "Selecione o cabeleireiro.\n";
             }
             if (lstProcedimentos.Items.Count == 0)
             {
@@ -412,8 +412,8 @@ namespace SenacHair
         private void PreencherClasse()
         {
             //Atribuímos às propriedades do objeto os respectivos valores informados no formulário
-            agendamento.dentista.id = (int)cboCabeleireiro.SelectedValue;
-            agendamento.data = Convert.ToDateTime(grdAgendamento.SelectedRows[0].Cells[1].Value);
+            agendamento.cabeleireiro.id = (int)cboCabeleireiro.SelectedValue;
+            agendamento.data = Convert.ToDateTime(dtpAgendamento.Value.ToShortDateString()+" "+ grdAgendamento.SelectedRows[0].Cells[1].Value);
             agendamento.situacao.id = agendamento.id == 0 ? 1 : (int)cboSituacoes.SelectedValue;
             //Limpamos a lista de procedimentos
             agendamento.procedimentos.Clear();
@@ -476,5 +476,12 @@ namespace SenacHair
                 e.Handled = true;
             }
         }
+
+        private void dtpAgendamento_ValueChanged_1(object sender, EventArgs e)
+        {
+            if (cboCabeleireiro.SelectedValue == null) return;
+            CarregarGrid();
+        }
+
     }
 }

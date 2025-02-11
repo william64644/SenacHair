@@ -12,7 +12,7 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Windows.Forms;
 
-namespace HappySmile
+namespace SenacHair
 {
     public static class Global
     {

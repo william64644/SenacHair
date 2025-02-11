@@ -187,7 +187,7 @@
             this.MinimizeBox = false;
             this.Name = "frmFormaPagamento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmFormaPagamento";
+            this.Text = "Forma de Pagamento";
             this.Load += new System.EventHandler(this.frmFormaPagamento_Load);
             this.grpLista.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdDados)).EndInit();

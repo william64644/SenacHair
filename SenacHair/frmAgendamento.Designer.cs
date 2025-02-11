@@ -93,6 +93,7 @@
             this.dtpAgendamento.Name = "dtpAgendamento";
             this.dtpAgendamento.Size = new System.Drawing.Size(96, 20);
             this.dtpAgendamento.TabIndex = 6;
+            this.dtpAgendamento.ValueChanged += new System.EventHandler(this.dtpAgendamento_ValueChanged_1);
             // 
             // lblData
             // 
@@ -338,7 +339,7 @@
             this.MinimizeBox = false;
             this.Name = "frmAgendamento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmAgendamento";
+            this.Text = "Agendamentos";
             this.Load += new System.EventHandler(this.frmAgendamento_Load);
             this.grpAgendamento.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdAgendamento)).EndInit();

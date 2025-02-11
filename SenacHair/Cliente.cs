@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using System.Transactions;
 
-namespace HappySmile
+namespace SenacHair
 {
     public class Cliente
     {

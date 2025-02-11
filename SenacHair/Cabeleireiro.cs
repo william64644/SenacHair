@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using System.Reflection;
 using System.Transactions;
 
-namespace HappySmile
+namespace SenacHair
 {
     public class Cabeleireiro
     {

@@ -403,6 +403,16 @@ namespace SenacHair.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap symbol_dollar {
+            get {
+                object obj = ResourceManager.GetObject("symbol_dollar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap telephone2 {
             get {
                 object obj = ResourceManager.GetObject("telephone2", resourceCulture);

@@ -39,11 +39,11 @@
             this.lblNome = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.grpDados = new System.Windows.Forms.GroupBox();
+            this.txtTelefone = new System.Windows.Forms.TextBox();
             this.grpLista = new System.Windows.Forms.GroupBox();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnGravar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.txtTelefone = new System.Windows.Forms.TextBox();
             this.grpPesquisa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdDados)).BeginInit();
             this.grpDados.SuspendLayout();
@@ -154,6 +154,14 @@
             this.grpDados.TabStop = false;
             this.grpDados.Text = "Dados para Cadastro";
             // 
+            // txtTelefone
+            // 
+            this.txtTelefone.Location = new System.Drawing.Point(55, 73);
+            this.txtTelefone.MaxLength = 100;
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(293, 20);
+            this.txtTelefone.TabIndex = 23;
+            // 
             // grpLista
             // 
             this.grpLista.Controls.Add(this.grdDados);
@@ -202,14 +210,6 @@
             this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // txtTelefone
-            // 
-            this.txtTelefone.Location = new System.Drawing.Point(55, 73);
-            this.txtTelefone.MaxLength = 100;
-            this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new System.Drawing.Size(293, 20);
-            this.txtTelefone.TabIndex = 23;
             // 
             // frmCabeleireiro
             // 

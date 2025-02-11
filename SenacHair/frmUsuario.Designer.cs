@@ -291,7 +291,7 @@
             this.MinimizeBox = false;
             this.Name = "frmUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmUsuario";
+            this.Text = "Usuario";
             this.Load += new System.EventHandler(this.frmUsuario_Load);
             this.grpStatus.ResumeLayout(false);
             this.grpStatus.PerformLayout();

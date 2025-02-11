@@ -121,6 +121,9 @@
   <data name="Pacientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pacientes.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Senac_Hair_Sobre" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Senac_Hair_Sobre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Dentistas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dentistas.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -133,6 +136,9 @@
   <data name="address_book_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\address_book_add.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bullet_ball_glass_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bullet_ball_glass_green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="facebook" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\facebook.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -142,14 +148,14 @@
   <data name="Lock_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lock_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="note_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\note_add.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="businessman_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\businessman_add.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="door2_open" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\door2_open.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Senac_Hair" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Senac_Hair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="HappySmile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HappySmile.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,8 +178,8 @@
   <data name="Senac_Hair_Formatado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Senac_Hair_Formatado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="briefcase_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\briefcase_add.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="credit_cards" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\credit_cards.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="address_book" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\address_book.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,22 +211,19 @@
   <data name="eraser" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eraser.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="credit_cards" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\credit_cards.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Senac_Hair" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Senac_Hair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bullet_ball_glass_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bullet_ball_glass_green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Senac_Hair_Formatado1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Senac_Hair_Formatado1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="briefcase_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\briefcase_add.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="note" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\note.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="note_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\note_add.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Senac_Hair_Formatado1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Senac_Hair_Formatado1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Senac_Hair_Sobre" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Senac_Hair_Sobre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="symbol_dollar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\symbol_dollar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -186,7 +186,7 @@
             this.MinimizeBox = false;
             this.Name = "frmProcedimento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmProcedimento";
+            this.Text = "Procedimento";
             this.Load += new System.EventHandler(this.frmProcedimento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdDados)).EndInit();
             this.grpLista.ResumeLayout(false);

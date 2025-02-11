@@ -7,7 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Collections;
 
-namespace HappySmile
+namespace SenacHair
 {
     public class AcessoBD
     {

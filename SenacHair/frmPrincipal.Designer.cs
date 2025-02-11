@@ -43,6 +43,7 @@
             this.mnuCadastroUsuario = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuUsuarios = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.mnuPagamentos = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuSobre = new System.Windows.Forms.ToolStripMenuItem();
             this.tmrPrincipal = new System.Windows.Forms.Timer(this.components);
             this.lblTempo = new System.Windows.Forms.ToolStripStatusLabel();
@@ -65,7 +66,7 @@
             // 
             this.mnuFormasPagamento.Image = global::SenacHair.Properties.Resources.credit_cards;
             this.mnuFormasPagamento.Name = "mnuFormasPagamento";
-            this.mnuFormasPagamento.Size = new System.Drawing.Size(227, 30);
+            this.mnuFormasPagamento.Size = new System.Drawing.Size(219, 22);
             this.mnuFormasPagamento.Text = "&Formas de Pagamento";
             this.mnuFormasPagamento.Click += new System.EventHandler(this.mnuFormasPagamento_Click);
             // 
@@ -84,7 +85,7 @@
             // 
             this.mnuProcedimentos.Image = global::SenacHair.Properties.Resources.notebook;
             this.mnuProcedimentos.Name = "mnuProcedimentos";
-            this.mnuProcedimentos.Size = new System.Drawing.Size(227, 30);
+            this.mnuProcedimentos.Size = new System.Drawing.Size(219, 22);
             this.mnuProcedimentos.Text = "&Procedimentos";
             this.mnuProcedimentos.Click += new System.EventHandler(this.mnuProcedimentos_Click);
             // 
@@ -92,7 +93,7 @@
             // 
             this.mnuSituacaoAgendamento.Image = global::SenacHair.Properties.Resources.calendar_1;
             this.mnuSituacaoAgendamento.Name = "mnuSituacaoAgendamento";
-            this.mnuSituacaoAgendamento.Size = new System.Drawing.Size(227, 30);
+            this.mnuSituacaoAgendamento.Size = new System.Drawing.Size(219, 22);
             this.mnuSituacaoAgendamento.Text = "&Situações de Agendamento";
             this.mnuSituacaoAgendamento.Click += new System.EventHandler(this.mnuSituacaoAgendamento_Click);
             // 
@@ -108,7 +109,7 @@
             // 
             this.mnuCadastroCabeleireiro.Image = global::SenacHair.Properties.Resources.Dentistas;
             this.mnuCadastroCabeleireiro.Name = "mnuCadastroCabeleireiro";
-            this.mnuCadastroCabeleireiro.Size = new System.Drawing.Size(216, 30);
+            this.mnuCadastroCabeleireiro.Size = new System.Drawing.Size(208, 22);
             this.mnuCadastroCabeleireiro.Text = "Cadastro de Cabeleireiros";
             this.mnuCadastroCabeleireiro.Click += new System.EventHandler(this.mnuCadastroCabeleireiro_Click);
             // 
@@ -125,7 +126,7 @@
             // 
             this.mnuCadastroClientes.Image = global::SenacHair.Properties.Resources.Pacientes;
             this.mnuCadastroClientes.Name = "mnuCadastroClientes";
-            this.mnuCadastroClientes.Size = new System.Drawing.Size(190, 30);
+            this.mnuCadastroClientes.Size = new System.Drawing.Size(182, 22);
             this.mnuCadastroClientes.Text = "Cadastro de Clientes";
             this.mnuCadastroClientes.Click += new System.EventHandler(this.mnuCadastroClientes_Click);
             // 
@@ -142,7 +143,7 @@
             // 
             this.mnuCadastroUsuario.Image = global::SenacHair.Properties.Resources.businessman_add;
             this.mnuCadastroUsuario.Name = "mnuCadastroUsuario";
-            this.mnuCadastroUsuario.Size = new System.Drawing.Size(188, 30);
+            this.mnuCadastroUsuario.Size = new System.Drawing.Size(164, 22);
             this.mnuCadastroUsuario.Text = "&Cadastro Usuário";
             this.mnuCadastroUsuario.Click += new System.EventHandler(this.mnuCadastroUsuario_Click);
             // 
@@ -163,6 +164,7 @@
             this.mnuPacientes,
             this.mnuCabeleireiros,
             this.mnuAgendamentos,
+            this.mnuPagamentos,
             this.mnuDominios,
             this.mnuSobre,
             this.mnuSair});
@@ -171,6 +173,14 @@
             this.menuStrip1.Size = new System.Drawing.Size(800, 32);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // mnuPagamentos
+            // 
+            this.mnuPagamentos.Image = global::SenacHair.Properties.Resources.symbol_dollar;
+            this.mnuPagamentos.Name = "mnuPagamentos";
+            this.mnuPagamentos.Size = new System.Drawing.Size(109, 28);
+            this.mnuPagamentos.Text = "Pagamentos";
+            this.mnuPagamentos.Click += new System.EventHandler(this.mnuPagamentos_Click);
             // 
             // mnuSobre
             // 
@@ -184,6 +194,7 @@
             // 
             this.tmrPrincipal.Enabled = true;
             this.tmrPrincipal.Interval = 1000;
+            this.tmrPrincipal.Tick += new System.EventHandler(this.tmrPrincipal_Tick);
             // 
             // lblTempo
             // 
@@ -210,6 +221,7 @@
             // 
             // statusStrip1
             // 
+            this.statusStrip1.BackColor = System.Drawing.Color.White;
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblUsuario,
@@ -225,17 +237,21 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(148)))), ((int)(((byte)(129)))));
             this.BackgroundImage = global::SenacHair.Properties.Resources.Senac_Hair_Formatado1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(800, 555);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.statusStrip1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmPrincipal";
+            this.Text = " Principal";
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
@@ -266,5 +282,6 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripMenuItem mnuProcedimentos;
         private System.Windows.Forms.ToolStripMenuItem mnuSituacaoAgendamento;
+        private System.Windows.Forms.ToolStripMenuItem mnuPagamentos;
     }
 }

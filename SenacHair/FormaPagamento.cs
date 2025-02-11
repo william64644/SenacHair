@@ -6,19 +6,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HappySmile
+namespace SenacHair
 {
     public class FormaPagamento
     {
         //Definimos as propriedades da classe
         public int id { get; set; }
-        public string formaPagamento { get; set; }
+        public string forma { get; set; }
         //Criamos o método construtor para definirmos valores
         //padrão para as propriedades no momento da instância do objeto
         public FormaPagamento()
         {
             id = 0;
-            formaPagamento = string.Empty;
+            forma = string.Empty;
         }
         //Instanciamos os objetos necessários para
         //a comunicação entre o objeto criado e o banco de dados
@@ -46,13 +46,13 @@ namespace HappySmile
                     //adicionamos o parâmetro à lista de parâmetros
                     lista.Add(new SqlParameter("@id", id));
                 }
-                else if (formaPagamento != string.Empty)
+                else if (forma != string.Empty)
                 {
                     //Caso a forma de pagamento esteja preenchida
                     //Definimos a consulta por aproximação através da forma de pagamento
                     sql += "where formaPagamento like @formaPagamento \n";
                     //adicionamos o parâmetro à lista de parâmetros
-                    lista.Add(new SqlParameter("@formaPagamento", "%" + formaPagamento + "%"));
+                    lista.Add(new SqlParameter("@formaPagamento", "%" + forma + "%"));
                 }
                 //Ordenamos o retorno pela forma de pagamento
                 sql += "order by formaPagamento";
@@ -67,7 +67,7 @@ namespace HappySmile
                     //Atribuímos os valores retornados a sua respectiva
                     //propriedade da classe
                     id = Convert.ToInt32(dt.Rows[0]["id"]);
-                    formaPagamento = dt.Rows[0]["formaPagamento"].ToString();
+                    forma = dt.Rows[0]["formaPagamento"].ToString();
                 }
                 //Retornamos o DataTable com os dentistas retornados na consulta
                 return dt;
@@ -108,7 +108,7 @@ namespace HappySmile
                     lista.Add(new SqlParameter("@id", id));
                 }
                 //Adicionamos em conjunto o restante dos parâmetros SQL
-                lista.Add(new SqlParameter("@formaPagamento", formaPagamento));
+                lista.Add(new SqlParameter("@formaPagamento", forma));
                 //Solicitamos ao acesso para executar o INSERT/UPDATE junto ao banco de dados
                 acesso.ExecutarSQL(sql, lista);
             }

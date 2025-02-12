@@ -46,7 +46,7 @@ namespace SenacHair
                 grdDados.Columns[3].HeaderText = "Telefone";
                 //Largura das colunas
                 grdDados.Columns[1].Width = 180;
-                grdDados.Columns[2].Width = 75;
+                grdDados.Columns[2].Width = 83;
                 grdDados.Columns[3].Width = 75;
 
 

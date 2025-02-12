@@ -38,7 +38,7 @@ namespace SenacHair
                 //Criptografamos a senha digitada
                 string senhaCriptografada = Global.EncriptPassword(txtSenha.Text);
                 //Comparamos a senha criptografada com a senha retornada do banco de dados
-                if (usuario.password == senhaCriptografada)
+                if (usuario.password == senhaCriptografada && usuario.password != "")
                 {
                     //Caso a senha esteja correta, exibimos a mensagem de sucesso
                     MessageBox.Show("Bem vindo " + usuario.nome, "Login",
